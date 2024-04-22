@@ -22,4 +22,3 @@ Espero que este viaje que emprendemos juntos sea muy enriquecedor para todos.
 
 
 
-Soy Nicolás Reggi, un apasionado emprendedor residente en la ciudad de Tacuarembó.
