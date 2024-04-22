@@ -20,3 +20,6 @@ Me entusiasma enormemente formar parte de la experiencia de aprendizaje, encuent
 
 Espero que este viaje que emprendemos juntos sea muy enriquecedor para todos.
 
+
+
+Soy Nicolás Reggi, un apasionado emprendedor residente en la ciudad de Tacuarembó.
