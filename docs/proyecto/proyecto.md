@@ -1,11 +1,8 @@
 ---
 hide:
-  - toc
-description: paso 3
+    - toc
 ---
 
-# paso 3
+# Ideas Iniciales
 
-generar una ssh key para establecer coneccion segura con mi pc utilizando el comando cal \~/.ssh/id\_rsa.pub
-
-Esta etapa fue demorada por diversos motivos, desde los mas simples como que no encontraba este símbolo en el teclado (\~)  y finalmente pasando el teclado a idioma español latinoamerica  y presionando altgR+ cierre de corchete lo logre
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
