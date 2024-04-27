@@ -1,6 +1,6 @@
 # Sobre mi
 
-![](../images/mifoto.jpg)
+![](../images/foto.jpg)
 
 Soy Nicolás Reggi, un apasionado emprendedor residente en la ciudad de Tacuarembó. Mi experiencia se enfoca en el mundo de la comunicación visual, con especialización en impresión y cartelería.
 Me fascina la tecnología, lo que me ha llevado a explorar campos como la electrónica, la programación y la impresión 3D, entre otros. 
