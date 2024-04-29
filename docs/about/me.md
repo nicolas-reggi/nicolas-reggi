@@ -9,4 +9,3 @@ Este laboratorio tiene como principal objetivo ofrecer nuevas oportunidades en e
 Me entusiasma enormemente formar parte de la experiencia de aprendizaje, encuentro y crecimiento proporcionada por UTEC
 Espero que este viaje que emprendemos juntos sea muy enriquecedor para todos.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit **[my website](https://community.emergentfutures.io/courses/5566525/content)**
