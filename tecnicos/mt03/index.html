@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mt01" class="md-skip">
+        <a href="#mt03" class="md-skip">
           Skip to content
         </a>
       
@@ -474,10 +474,11 @@
                   
                 
                 
-                <h1 id="mt01">MT01<a class="headerlink" href="#mt01" title="Permanent link">&para;</a></h1>
-<p>En este módulo, exploramos el corte láser asistido por computadora.
-Aunque ya estaba familiarizado con el funcionamiento del equipo de corte láser que utilizo en mi laboratorio me parece una buena oportunidad para profundizar mis conocimientos en este tema, además de aprender nuevas utilidades tanto en el corte grabado láser como en el corte de vinilo.
-En esta entrega, compartiré los principales aprendizajes que he obtenido durante este período de formación.</p>
+                <h1 id="mt03">MT03<a class="headerlink" href="#mt03" title="Permanent link">&para;</a></h1>
+<h1 id="corte-laser-asistido-por-computadora">Corte laser asistido por computadora<a class="headerlink" href="#corte-laser-asistido-por-computadora" title="Permanent link">&para;</a></h1>
+<p>En este módulo, exploramos el corte láser asistido por computadora.</p>
+<p>Aunque ya estaba familiarizado con el funcionamiento del equipo de corte láser que utilizo en mi laboratorio me parece una buena oportunidad para profundizar mis conocimientos en este tema, además de aprender nuevas utilidades tanto en el corte grabado láser como en el corte de vinilo.</p>
+<p>En esta entrega, compartiré los principales aprendizajes que he obtenido durante este período de formación.</p>
 <p>Funcionamiento del Láser:
 Un aspecto que me resulto muy interesante ha sido el estudio del funcionamiento del láser. Desde su historia hasta su aplicación en la tecnología moderna, el material de estudio comprende diversos aspectos como por ejemplo la diferencia entre la luz láser y la luz convencional, así como también la naturaleza de la radiación láser y el fenómeno de emisión estimulada.</p>
 <p>El corte láser es una tecnología sustractiva que ofrece múltiples ventajas en la fabricación.
@@ -538,16 +539,17 @@ Este archivo contiene las instrucciones de movimiento y potencia que seguirá el
 Este archivo suele ser del tipo .gcode,  para ello debemos procesar nuestro diseño en un software de tipo CAM donde definimos de qué forma se reproduce cada elemento en la máquina: (velocidad, potencia y frecuencia).
 Aunque cada equipo de corte láser viene con su propio software CAM, en los laboratorios de fabricación de UTEC y en la mayoría de laboratorios makers, utilizamos el software RDWorks. Instalamos este software en nuestras PC para generar nuestros archivos de corte y grabado.</p>
 <p>A continuación, describo los pasos de dos ejercicios que realicé para profundizar en mi aprendizaje con diferentes herramientas y un tercer ejercicio, que es el proyecto final para este módulo técnico. Este proyecto culminará con una visita al laboratorio de UTEC para materializar mi diseño.</p>
-<p>Ejercicio 1:
-Utilizando la técnica de Kerf Bending, que permite el debilitamiento y deformación de materiales de manera controlada, decidí fabricar un símil reloj pulsera. Desde Fusion 360, definí las dimensiones finales en un sketch. Generé líneas verticales con una separación de 1,8 mm y líneas horizontales que definían el largo total. Después de realizar las restricciones y acotar medidas, procedí a realizar un patrón rectangular para repetir las líneas de corte cada 3,6mm, posteriormente añadí un círculo que simulaba el reloj y realicé los encastres.
-Guardé el sketch como DXF para trabajarlo en Inkscape. Luego importé el DXF y revisé todas las líneas, eliminando las de construcción y superposiciones existentes, dejándolo listo para el envío a RDWorks. Finalmente pude cortar un acrílico de 3 mm con un resultado muy interesante.</p>
-<p>Ejercicio 2:
-Para mi segundo ejercicio, utilicé el software Slicer for Fusion, que permite transformar modelos 3D en cortes planos para el corte láser. Tal como se mencionaba en el tutorial de YouTube que nos enviaron, el software tiene algunos problemas con los archivos. Después de intentar importar varios archivos STL sin éxito, logré hacer funcionar un modelo muy simple de una figura de una película (Darth Vader). Aunque no fue la figura ideal, me sirvió para probar esta herramienta.
-Luego de importar la figura, configuré el tamaño y elegí el método stacked slices, generando capas ordenadas en varias planchas de 500x500 mm. Guardé en mi pendrive la carpeta con un zip con 5 archivos en formato DXF listos para cortar en el equipo láser. Cada archivo que abrí en RDWorks estaba listo para usar, dividido en dos colores, lo que permitía utilizar menos potencia para el grabado vectorial de los números de registro y una potencia alta de corte  para el color que contenía la figura.
-Si bien la espera para el corte de todas las piezas en cartonplast y el ensamblaje final fue larga, estoy muy conforme con el resultado.</p>
-<p>Ejercicio 3:
-Este tercer trabajo corresponde al trabajo de entrega el  que consistía en la realización de piezas para cortar en láser con encastres paramétricos y un logo. Para esto decidí transformar estas piezas en una lámpara de colgar. Diseñé también dos soportes paramétricos utilizando el método de kerfing para colgar y sostener la lámpara.
-Fue muy útil profundizar en el uso de Fusion nuevamente. Configuré los parámetros de espesor y holgura, y los probé con éxito cambiando los números. La figura fue un círculo de 110 mm con ranuras de 20 mm x el espesor paramétrico (3 mm). Realicé un patrón circular para realizar las repeticiones.</p>
+<p>Ejercicio 1:</p>
+<p>Utilizando la técnica de Kerf Bending, que permite el debilitamiento y deformación de materiales de manera controlada, decidí fabricar un símil reloj pulsera. Desde Fusion 360, definí las dimensiones finales en un sketch. Generé líneas verticales con una separación de 1,8 mm y líneas horizontales que definían el largo total. Después de realizar las restricciones y acotar medidas, procedí a realizar un patrón rectangular para repetir las líneas de corte cada 3,6mm, posteriormente añadí un círculo que simulaba el reloj y realicé los encastres.</p>
+<p>Guardé el sketch como DXF para trabajarlo en Inkscape. Luego importé el DXF y revisé todas las líneas, eliminando las de construcción y superposiciones existentes, dejándolo listo para el envío a RDWorks. Finalmente pude cortar un acrílico de 3 mm con un resultado muy interesante.</p>
+<p>Ejercicio 2:</p>
+<p>Para mi segundo ejercicio, utilicé el software Slicer for Fusion, que permite transformar modelos 3D en cortes planos para el corte láser. </p>
+<p>Tal como se mencionaba en el tutorial de YouTube que nos enviaron, el software tiene algunos problemas con los archivos. Después de intentar importar varios archivos STL sin éxito, logré hacer funcionar un modelo muy simple de una figura de una película (Darth Vader). Aunque no fue la figura ideal, me sirvió para probar esta herramienta.</p>
+<p>Luego de importar la figura, configuré el tamaño y elegí el método stacked slices, generando capas ordenadas en varias planchas de 500x500 mm. Guardé en mi pendrive la carpeta con un zip con 5 archivos en formato DXF listos para cortar en el equipo láser. Cada archivo que abrí en RDWorks estaba listo para usar, dividido en dos colores, lo que permitía utilizar menos potencia para el grabado vectorial de los números de registro y una potencia alta de corte  para el color que contenía la figura.</p>
+<p>Si bien la espera para el corte de todas las piezas en cartonplast y el ensamblaje final fue larga, estoy muy conforme con el resultado.</p>
+<p>Ejercicio 3:</p>
+<p>Este tercer trabajo corresponde al trabajo de entrega el  que consistía en la realización de piezas para cortar en láser con encastres paramétricos y un logo. Para esto decidí transformar estas piezas en una lámpara de colgar. Diseñé también dos soportes paramétricos utilizando el método de kerfing para colgar y sostener la lámpara.</p>
+<p>Fue muy útil profundizar en el uso de Fusion nuevamente. Configuré los parámetros de espesor y holgura, y los probé con éxito cambiando los números. La figura fue un círculo de 110 mm con ranuras de 20 mm x el espesor paramétrico (3 mm). Realicé un patrón circular para realizar las repeticiones.</p>
 <p>Sin duda, el mayor problema fue mover las piezas para que encastraran y realizar nuevamente el patrón circular, fue todo un aprendizaje y varias veces tuve que iniciar el trabajo desde cero. Para la realización del logotipo no tuve problemas, dado que ya habíamos realizado un trabajo similar, igualmente elegí otro logo para seguir practicando en Inkscape.</p>
 <p>Las últimas dos piezas fueron los soportes con kerf. Como también los había realizado anteriormente como ejercicio, no tuve mayores dificultades. Esta vez les agregué encastres paramétricos para seguir la lógica del ejercicio. 
 El sketch lo realicé del lado derecho y luego lo espejé con la herramienta de simetría.
