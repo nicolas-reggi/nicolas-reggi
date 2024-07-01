@@ -513,8 +513,8 @@
     }
 </style>
 <h1 id="modulo-tecnico-04">Módulo Técnico 04<a class="headerlink" href="#modulo-tecnico-04" title="Permanent link">&para;</a></h1>
-<p><img alt="" src="../images/mt04/000" /></p>
-<p>En el Módulo Técnico 04, nos introducimos en el apasionante mundo de la electrónica y la programación, utilizando plataformas como Arduino que simplifican el proceso de prototipado y ofrecen amplias posibilidades de desarrollo. </p>
+<p>En el Módulo Técnico 04, nos introducimos en el apasionante mundo de la electrónica y la programación, utilizando plataformas como Arduino que simplifican el proceso de prototipado y ofrecen amplias posibilidades de desarrollo. 
+<img alt="" src="../images/mt04/000" /></p>
 <p>Antes de adentrarnos en la creación de proyectos prácticos, revisamos los conceptos básicos de la electricidad, esenciales para comprender y manejar adecuadamente los componentes electrónicos.</p>
 <p>Este módulo nos permite combinar teoría y práctica, proporcionando una base sólida para innovar y resolver problemas con soluciones electrónicas efectivas. Para trabajar con dispositivos como Arduino es fundamental entender conceptos básicos de electricidad así como algunas fórmulas matemáticas.</p>
 <h1 id="voltaje">Voltaje<a class="headerlink" href="#voltaje" title="Permanent link">&para;</a></h1>
@@ -741,11 +741,15 @@ Herramientas y Materiales Utilizados</p>
    delayMicroseconds(10);
    digitalWrite(trigPin, LOW);
    tiempo = pulseIn(echoPin, HIGH);
-   distancia = (tiempo * 0.034) / 2; // Multiplica tiempo de ida y vuelta del pulso en microsegundos por la   velocidad del sonido 340 metros/seg o 0.034 cm/seg dividido por 2 ya que es ida y vuelta.
+   distancia = (tiempo * 0.034) / 2; 
+   //Multiplica tiempo de ida y vuelta del pulso en microsegundos
+   //por la velocidad del sonido 340 metros/seg o 0.034 cm/seg
+   //dividido por 2 ya que es ida y vuelta.
    Serial.println(distancia);
    delay(500);
    if (distancia <= 50) {
-    servo1.write(180); // Si la distancia es menor o igual a 50 cm, gira el servo motor a 180 grados.
+    servo1.write(180);
+    // Si la distancia es menor o igual a 50 cm, gira el servo 180 grados.
    } else {
     servo1.write(0); // De lo contrario, lo gira a 0 grados.
    }
