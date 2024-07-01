@@ -517,45 +517,45 @@
 <p>En el Módulo Técnico 04, nos introducimos en el apasionante mundo de la electrónica y la programación, utilizando plataformas como Arduino que simplifican el proceso de prototipado y ofrecen amplias posibilidades de desarrollo. </p>
 <p>Antes de adentrarnos en la creación de proyectos prácticos, revisamos los conceptos básicos de la electricidad, esenciales para comprender y manejar adecuadamente los componentes electrónicos.</p>
 <p>Este módulo nos permite combinar teoría y práctica, proporcionando una base sólida para innovar y resolver problemas con soluciones electrónicas efectivas. Para trabajar con dispositivos como Arduino es fundamental entender conceptos básicos de electricidad así como algunas fórmulas matemáticas.</p>
-<p>Voltaje
-Es la diferencia de potencial eléctrico entre dos puntos y se mide en voltios. Es similar a la presión del agua en una tubería, donde mayor voltaje significa mayor presión para mover electrones.
+<h1 id="voltaje">Voltaje<a class="headerlink" href="#voltaje" title="Permanent link">&para;</a></h1>
+<p>Es la diferencia de potencial eléctrico entre dos puntos y se mide en voltios. Es similar a la presión del agua en una tubería, donde mayor voltaje significa mayor presión para mover electrones.
 Fórmula: V=I×R</p>
-<p>Corriente
-Es el flujo de electrones a través de un conductor y se mide en amperios. Es como el flujo de agua que pasa por una tubería.
+<h1 id="corriente">Corriente<a class="headerlink" href="#corriente" title="Permanent link">&para;</a></h1>
+<p>Es el flujo de electrones a través de un conductor y se mide en amperios. Es como el flujo de agua que pasa por una tubería.
 Fórmula: I=V/R</p>
-<p>Resistencia
-Es la oposición al flujo de corriente y se mide en ohmios. Representa cuán difícil es para los electrones moverse a través de un material.
+<h1 id="resistencia">Resistencia<a class="headerlink" href="#resistencia" title="Permanent link">&para;</a></h1>
+<p>Es la oposición al flujo de corriente y se mide en ohmios. Representa cuán difícil es para los electrones moverse a través de un material.
 Fórmula: R=V/I</p>
 <p>Entender estos conceptos es crucial para diseñar y construir circuitos que funcionen correctamente y sean seguros. 
 Por ejemplo, cuando conectamos un sensor a un Arduino, debemos asegurarnos de que el voltaje y la corriente sean adecuados para evitar daños en los componentes.</p>
-<p>¿Qué es una Placa Arduino?
-Arduino es una plataforma de prototipos electrónicos de código abierto que permite a los usuarios crear proyectos interactivos. Algunas de las ventajas de Arduino incluyen:</p>
+<h1 id="que-es-una-placa-arduino">¿Qué es una Placa Arduino?<a class="headerlink" href="#que-es-una-placa-arduino" title="Permanent link">&para;</a></h1>
+<p>Arduino es una plataforma de prototipos electrónicos de código abierto que permite a los usuarios crear proyectos interactivos. Algunas de las ventajas de Arduino incluyen:</p>
 <p>Económico: Las placas Arduino son accesibles en términos de costo, lo que las hace ideales para estudiantes y aficionados.</p>
 <p>Multiplataforma: El software Arduino (IDE) funciona en Windows, macOS y Linux.
 Entorno de programación sencillo: El IDE de Arduino es fácil de usar tanto para principiantes como para usuarios avanzados.</p>
 <p>Código abierto: Tanto el software como el hardware de Arduino son de código abierto, permitiendo a los usuarios personalizar y expandir sus proyectos.</p>
 <p>Modelos de Placas Arduino
 Existen varios modelos de placas Arduino, cada uno con características específicas. Uno de los modelos más comunes es el Arduino Uno, que utiliza el microcontrolador ATmega328P, ideal para la mayoría de los proyectos de aprendizaje y prototipado.</p>
-<p>Sensores
-Los sensores permiten a Arduino interactuar con su entorno al medir diversas variables físicas y convertirlas en señales eléctricas que el Arduino puede procesar.</p>
+<h1 id="sensores">Sensores<a class="headerlink" href="#sensores" title="Permanent link">&para;</a></h1>
+<p>Los sensores permiten a Arduino interactuar con su entorno al medir diversas variables físicas y convertirlas en señales eléctricas que el Arduino puede procesar.</p>
 <p>Algunos sensores comunes utilizados en proyectos de Arduino son:</p>
 <p>Sensor de distancia ultrasónico (HC-SR04): Este sensor mide la distancia a un objeto utilizando ondas de sonido de alta frecuencia. Es útil para aplicaciones como robots que evitan obstáculos.
 Sensor de obstáculos (KY-033): Utiliza un emisor y receptor infrarrojo para detectar la presencia de objetos en su camino. Es comúnmente usado en robots seguidores de línea.</p>
 <p>Ejemplo de Uso de Sensores
 El sensor ultrasónico HC-SR04 funciona emitiendo un pulso de ultrasonido y midiendo el tiempo que tarda en reflejarse desde un objeto. Arduino calcula la distancia basándose en este tiempo y la velocidad del sonido. Este tipo de sensor es vital en aplicaciones donde se necesita medir distancias con precisión como en sistemas de seguridad o robots autónomos.</p>
-<p>Servomotores
-Un servomotor es un tipo de motor que puede controlar su posición con precisión. Se utiliza ampliamente en aplicaciones que requieren movimientos controlados y específicos. Un servomotor típico tiene tres componentes principales:</p>
+<h1 id="servomotores">Servomotores<a class="headerlink" href="#servomotores" title="Permanent link">&para;</a></h1>
+<p>Un servomotor es un tipo de motor que puede controlar su posición con precisión. Se utiliza ampliamente en aplicaciones que requieren movimientos controlados y específicos. Un servomotor típico tiene tres componentes principales:</p>
 <p>Motor DC: Proporciona la fuerza de rotación.
 Caja de engranajes: Reduce la velocidad del motor y aumenta el torque.
-Sistema de control: Usa un potenciómetro para monitorear la posición del eje y un circuito de control para ajustar la posición según sea necesario.
-Funcionamiento del Servomotor
+Sistema de control: Usa un potenciómetro para monitorear la posición del eje y un circuito de control para ajustar la posición según sea necesario.</p>
+<p>Funcionamiento del Servomotor
 El servomotor recibe una señal de control que determina su posición. Esta señal es una onda modulada por ancho de pulso (PWM), donde la duración del pulso indica la posición deseada del eje. 
 Los servomotores son utilizados en aplicaciones como:
 Robótica: Para mover brazos y articulaciones.
-Modelismo: En aviones y autos teledirigidos para controlar dirección y aceleración.
-Automatización: Para abrir y cerrar válvulas o controlar otros mecanismos precisos.</p>
-<p>Programación en Arduino
-La programación en Arduino se realiza mediante un entorno de desarrollo (IDE) basado en un lenguaje de programación sencillo, derivado de C/C++.
+Modelismo: En aviones y autos para controlar dirección y aceleración.
+Automatización: Para abrir y cerrar válvulas o controlar mecanismos.</p>
+<h1 id="programacion-en-arduino">Programación en Arduino<a class="headerlink" href="#programacion-en-arduino" title="Permanent link">&para;</a></h1>
+<p>La programación en Arduino se realiza mediante un entorno de desarrollo (IDE) basado en un lenguaje de programación sencillo, derivado de C/C++.
  A continuación, se presentan algunos conceptos clave de la programación en Arduino:</p>
 <p>Estructura Básica de un Sketch
 Un sketch en Arduino tiene dos partes principales:
@@ -563,63 +563,43 @@ setup(): Esta función se ejecuta una vez al inicio del programa. Aquí se confi
 loop(): Esta función se ejecuta continuamente en un bucle. Aquí se coloca el código que queremos que se repita indefinidamente.</p>
 <pre><code>
 void setup() {  
-
-  // Código de configuración  
-
+// Código de configuración  
 }  
-
-void loop() {  
-
-  // Código que se repite  
-
+void loop() 
+{ 
+// Código que se repite 
 }  
 </code></pre>
-<p>Variables y Tipos de Datos
-En Arduino, se pueden usar diferentes tipos de datos para almacenar información:</p>
+<h1 id="variables-y-tipos-de-datos">Variables y Tipos de Datos<a class="headerlink" href="#variables-y-tipos-de-datos" title="Permanent link">&para;</a></h1>
+<p>En Arduino, se pueden usar diferentes tipos de datos para almacenar información:</p>
 <pre><code>
 int: Enteros.  
-
 float: Números decimales.  
-
 char: Caracteres individuales.  
-
 boolean: Valores de verdadero o falso.  
-
 int ledPin = 13;    // Pin digital 13 para el LED  
-
 float temperature;  // Variable para almacenar la temperatura  
-
 char grade = 'A';   // Variable para almacenar un carácter  
-
 boolean isOn = true; // Variable para almacenar un valor booleano  
 </code></pre>
 
-<p>Librerías  </p>
+<h1 id="librerias">Librerías<a class="headerlink" href="#librerias" title="Permanent link">&para;</a></h1>
 <p>Arduino cuenta con numerosas librerías que facilitan el uso de hardware y sensores específicos. Algunas librerías comunes incluyen:</p>
 <p>Ejemplo: Servo para controlar servomotores.  </p>
 <p>Para usar una librería en un sketch, se debe incluir al inicio del código:</p>
 <pre><code>
 #include <Servo.h>  
-
 Servo myServo; // Crear un objeto de tipo Servo  
-
-
 void setup() {    
-
-
   myServo.attach(9); // Asociar el servo al pin 9  
-
 }
-
 void loop() {  
-
   myServo.write(90); // Mover el servo a la posición 90 grados  
-
 }  
 </code></pre>
 
 <p>En este módulo, avanzamos en los conceptos teóricos y prácticos del uso de Arduino para crear soluciones electrónicas aplicables a dispositivos funcionales. Gracias a su flexibilidad y accesibilidad, Arduino se convierte en una poderosa herramienta que permite la creación de proyectos innovadores y eficientes.</p>
-<p>Ejercicio 1: utilizando Arduino, Potenciómetro y Botón para Controlar un LED</p>
+<h1 id="ejercicio-1-utilizando-arduino-potenciometro-y-boton-para-controlar-un-led">Ejercicio 1: utilizando Arduino, Potenciómetro y Botón para Controlar un LED<a class="headerlink" href="#ejercicio-1-utilizando-arduino-potenciometro-y-boton-para-controlar-un-led" title="Permanent link">&para;</a></h1>
 <p>Introducción<br />
 En mi primer ejercicio de práctica con Arduino, aprendí a utilizar un potenciómetro y un botón como entradas para controlar el encendido y apagado de un LED. </p>
 <p>La idea era diseñar un sistema en el que el potenciómetro ajuste la velocidad de parpadeo del LED y el botón inicie o detenga este proceso. <br />
@@ -647,102 +627,65 @@ Conecté un segundo LED al pin digital 12 para indicar el estado del botón.</p>
 <p>Configuré los pines del LED, el potenciómetro y el botón en el código:</p>
 <pre><code>
    const int ledPin = 13;     // LED de parpadeo  
-
    const int potPin = A0;     // potenciómetro  
-
    const int buttonPin = 7;   // botón  
-
    const int statusLedPin = 12; // LED de estado del botón  
-
    bool blinkEnabled = false; // parpadeo apagado en inicio  
    </code></pre>
 
 <p>Implementé la función setup para inicializar los pines y la comunicación serial:  </p>
 <pre><code>
  void setup() {  
-
    pinMode(ledPin, OUTPUT);       // LED de parpadeo como salida  
-
    pinMode(potPin, INPUT);        // potenciómetro como entrada  
-
    pinMode(buttonPin, INPUT);     // botón como entrada  
-
    pinMode(statusLedPin, OUTPUT); // LED de estado como salida  
-
    Serial.begin(9600);  
-
    }  
 </code></pre>
 
 <p>Desarrollé la función loop para controlar el parpadeo del LED en función del potenciómetro y el botón:</p>
 <pre><code>
  void loop() {  
-
    static bool lastButtonState = LOW;  
-
    bool currentButtonState = digitalRead(buttonPin); // Lee el estado del botón  
-
-
    // Detecta el cambio de estado del botón (no presionado a presionado)  
-
    if (currentButtonState == HIGH && lastButtonState == LOW) {  
     }  
-
     blinkEnabled = !blinkEnabled; // Cambio de estado del parpadeo  
-
     delay(50); // Debounce (antirrebote)  
-
    } 
    lastButtonState = currentButtonState; // Actualiza estado del botón  
-
-
-
    // Controla el LED de estado según el estado del parpadeo  
-
    digitalWrite(statusLedPin, blinkEnabled ? HIGH : LOW);  
-
-
    int potValue = analogRead(potPin);  
-
    Serial.println(potValue);  
-
-
    // Calcula el retardo en función del valor del potenciómetro.  
-
    int delayTime = map(potValue, 0, 1023, 1000, 100); // Mapea el valor del potenciómetro   
-
    if (blinkEnabled) {  
-
-   digitalWrite(ledPin, HIGH); // Enciende LED de parpadeo  
-
+   digitalWrite(ledPin, HIGH); // Enciende LED de parpadeo   
    delay(delayTime);           // Espera un tiempo proporcional  
-
    digitalWrite(ledPin, LOW);  // Apaga LED de parpadeo  
-
    delay(delayTime);           // Espera el mismo tiempo nuevamente  
-
    } else {  
-
    digitalWrite(ledPin, LOW); // Apaga LED  
-
    }  
-
    }
 </code></pre>
 
-<p>Experiencia y Reflexión 
-Este ejercicio fue útil para entender cómo interactúan los componentes electrónicos y cómo se pueden utilizar entradas para controlar salidas en un proyecto de Arduino.<br />
+<h1 id="experiencia-y-reflexion">Experiencia y Reflexión<a class="headerlink" href="#experiencia-y-reflexion" title="Permanent link">&para;</a></h1>
+<p>Este ejercicio fue útil para entender cómo interactúan los componentes electrónicos y cómo se pueden utilizar entradas para controlar salidas en un proyecto de Arduino.<br />
  Si bien tenía experiencia básica en el manejo de Arduino para controlar motores o luces, nunca había explorado las posibilidades de las entradas, que considero muy interesantes y que abren nuevas oportunidades. Utilicé ejemplos de otros makers y comunidades para escribir el código, y realicé pruebas en Tinkercad antes de cargarlas en Arduino, lo cual fue de gran ayuda para evitar errores.</p>
 <p>Inicialmente, tuve dificultades para asegurar que el botón respondiera probando varias opciones que me gustaría seguir profundizando. El uso del potenciómetro para ajustar la velocidad de parpadeo del LED demostró ser una forma simple para  controlar una salida. 
 Finalmente logre que el LED parpadeara a una velocidad ajustable y que el botón iniciara o detuviera el parpadeo según fuera necesario.</p>
-<p>Ejercicio 2 utilizando Arduino, Sensor de Distancia y Servomotor
-Introducción
+<h1 id="ejercicio-2-utilizando-arduino-sensor-de-distancia-y-servomotor">Ejercicio 2:  utilizando Arduino, Sensor de Distancia y Servomotor<a class="headerlink" href="#ejercicio-2-utilizando-arduino-sensor-de-distancia-y-servomotor" title="Permanent link">&para;</a></h1>
+<p>Introducción
 En mi segundo ejercicio de práctica con arduino, experimenté por primera vez con el sensor de distancia SRF05 y un servomotor. Además, la idea era complementar el proyecto integrando los componentes electrónicos a un objeto físico. Planteo crear un diseño compuesto por varias piezas de acrílico, que podrían ser cortadas con láser y utilizando la técnica del kerfing para permitir el movimiento controlado dichas piezas. Este ejercicio es una aproximación a mi proyecto final integrador.
 Herramientas y Materiales Utilizados</p>
 <p>Programas y Plataformas
 •   Tinkercad: Nuevamente utilicé esta plataforma para simular el circuito antes de montarlo físicamente. 
-•   Arduino IDE: Para programar la placa Arduino y cargar el código en la misma.
-Componentes Electrónicos
+•   Arduino IDE: Para programar la placa Arduino y cargar el código en la misma.</p>
+<p>Componentes Electrónicos
 •   Arduino Uno: Placa de desarrollo que utilicé para controlar el sensor y el servomotor.
 •   Protoboard: Para montar los componentes y realizar las conexiones necesarias.
 •   Sensor de Distancia SRF05: Para medir la distancia de un objeto.
@@ -768,15 +711,12 @@ Componentes Electrónicos
  int echoPin = 11;
  long tiempo;
  int distancia;
-
  void setup() {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   Serial.begin(9600);
  }
-
-   void loop() {
-
+ void loop() {
 </code></pre>
 
 <p>Paso 4: Integración del Servomotor
@@ -827,8 +767,8 @@ Componentes Electrónicos
     Unifique piezas y electrónica en una base de pvc a fin de mantener estabilidad y mejorar la terminación del prototipo.</p>
 </li>
 </ol>
-<p>Experiencia y Reflexión Final
-Inicialmente, tuve dificultades para hacer que el código funcionara en la placa Arduino, aunque las simulaciones en Tinkercad eran exitosas. Gracias a la asistencia del profesor y a una revisión del código pude identificar y corregir los problemas, principalmente relacionados con la configuración del sensor de distancia y la omisión de ciertas variables necesarias.</p>
+<h1 id="experiencia-y-reflexion-final">Experiencia y Reflexión Final<a class="headerlink" href="#experiencia-y-reflexion-final" title="Permanent link">&para;</a></h1>
+<p>Inicialmente, tuve dificultades para hacer que el código funcionara en la placa Arduino, aunque las simulaciones en Tinkercad eran exitosas. Gracias a la asistencia del profesor y a una revisión del código pude identificar y corregir los problemas, principalmente relacionados con la configuración del sensor de distancia y la omisión de ciertas variables necesarias.</p>
 <p>El resultado fue satisfactorio, logrando que el servomotor respondiera adecuadamente a las mediciones del sensor de distancia. El prototipo de papel permitió verificar el concepto de movimiento, y la fabricación de las piezas en acrílico con la técnica de kerfing demostró ser efectiva para los objetivos del proyecto.</p>
 <p>A pesar del tiempo limitado (menos de 8 horas), el proyecto fue exitoso y representó un aprendizaje valioso en la integración de componentes electrónicos y la fabricación de estructuras físicas. Este ejercicio me preparó mejor para el proyecto final, dándome confianza en el uso de herramientas de simulación, programación y fabricación de componentes.</p>
 <p>La elección de las herramientas y métodos utilizados fue adecuada debido a su eficiencia para prototipar y realizar pruebas rápidas. Tinkercad resultó ser una opción útil para realizar simulaciones previas y evitar errores en el hardware. Además, el fácil acceso a tutoriales y la amplia comunidad de Arduino, con todos sus recursos disponibles, facilitó la solución de problemas y la implementación del código necesario.</p>
