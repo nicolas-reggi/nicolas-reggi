@@ -606,8 +606,8 @@ Conecté un segundo LED al pin digital 12 para indicar el estado del botón.</p>
 <p>const int potPin = A0;     // potenciómetro  </p>
 <p>const int buttonPin = 7;   // botón  </p>
 <p>const int statusLedPin = 12; // LED de estado del botón<br />
-}
-bool blinkEnabled = false; // parpadeo apagado en inicio  </p>
+   }
+   bool blinkEnabled = false; // parpadeo apagado en inicio  </p>
 <p>Implementé la función setup para inicializar los pines y la comunicación serial:  </p>
 <p>void setup() {  </p>
 <p>pinMode(ledPin, OUTPUT);       // LED de parpadeo como salida  </p>
@@ -628,8 +628,8 @@ bool blinkEnabled = false; // parpadeo apagado en inicio  </p>
 delay(50); // Debounce (antirrebote)
 </code></pre></div>
 
-<p>}
-  lastButtonState = currentButtonState; // Actualiza estado del botón  </p>
+<p>} 
+   lastButtonState = currentButtonState; // Actualiza estado del botón  </p>
 <p>// Controla el LED de estado según el estado del parpadeo  </p>
 <p>digitalWrite(statusLedPin, blinkEnabled ? HIGH : LOW);  </p>
 <p>int potValue = analogRead(potPin);  </p>
@@ -637,19 +637,12 @@ delay(50); // Debounce (antirrebote)
 <p>// Calcula el retardo en función del valor del potenciómetro.  </p>
 <p>int delayTime = map(potValue, 0, 1023, 1000, 100); // Mapea el valor del potenciómetro   </p>
 <p>if (blinkEnabled) {  </p>
-<div class="codehilite"><pre><span></span><code>digitalWrite(ledPin, HIGH); // Enciende LED de parpadeo
-
-delay(delayTime);           // Espera un tiempo proporcional
-
-digitalWrite(ledPin, LOW);  // Apaga LED de parpadeo
-
-delay(delayTime);           // Espera el mismo tiempo nuevamente
-</code></pre></div>
-
+<p>digitalWrite(ledPin, HIGH); // Enciende LED de parpadeo  </p>
+<p>delay(delayTime);           // Espera un tiempo proporcional  </p>
+<p>digitalWrite(ledPin, LOW);  // Apaga LED de parpadeo  </p>
+<p>delay(delayTime);           // Espera el mismo tiempo nuevamente  </p>
 <p>} else {  </p>
-<div class="codehilite"><pre><span></span><code>digitalWrite(ledPin, LOW); // Apaga LED
-</code></pre></div>
-
+<p>digitalWrite(ledPin, LOW); // Apaga LED  </p>
 <p>}  </p>
 <p>}</p>
 <p>Experiencia y Reflexión 
@@ -686,55 +679,45 @@ Componentes Electrónicos
 <p>Paso 3: Código para Medir Distancia
 •   Una vez que entendí el funcionamiento básico, modifiqué el código para medir la distancia en centímetros:</p>
 <p>int trigPin = 12;
-int echoPin = 11;
-long tiempo;
-int distancia;</p>
+ int echoPin = 11;
+ long tiempo;
+ int distancia;</p>
 <p>void setup() {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   Serial.begin(9600);
-}</p>
-<p>void loop() {
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-  tiempo = pulseIn(echoPin, HIGH);
-  distancia = (tiempo * 0.034) / 2;
-  Serial.println(distancia);
-  delay(500);
-}</p>
+ }</p>
+<p>void loop() {</p>
 <p>Paso 4: Integración del Servomotor
 •   Agregué la biblioteca para controlar el servomotor y modifiqué el código para mover el servo en función de la distancia medida:</p>
-<h1 id="include-biblioteca-servo-para-controlar-servo-motor">include <Servo.h> // Biblioteca Servo para controlar servo motor<a class="headerlink" href="#include-biblioteca-servo-para-controlar-servo-motor" title="Permanent link">&para;</a></h1>
-<p>Servo servo1;
-int trigPin = 12; // Pin 12 de Arduino conectado al pin Trigger del sensor.
-int echoPin = 11; // Pin 11 de Arduino conectado al pin Echo del sensor. 
-long tiempo; // Se utiliza como variable para números grandes. 
-int distancia;
-void setup() {
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
-  Serial.begin(9600); // Inicializa la comunicación serial a 9600 bps.
-  servo1.attach(10); // Conecta el servo motor al pin 10. 
-}
-void loop() {
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-  tiempo = pulseIn(echoPin, HIGH);
-  distancia = (tiempo * 0.034) / 2; // Multiplica tiempo de ida y vuelta del pulso en microsegundos por la velocidad del sonido 340 metros/seg o 0.034 cm/seg dividido por 2 ya que es ida y vuelta.
-  Serial.println(distancia);
-  delay(500);
-  if (distancia &lt;= 50) {
+<p>#include <Servo.h> // Biblioteca Servo para controlar servo motor
+   Servo servo1;
+   int trigPin = 12; // Pin 12 de Arduino conectado al pin Trigger del sensor.
+   int echoPin = 11; // Pin 11 de Arduino conectado al pin Echo del sensor. 
+   long tiempo; // Se utiliza como variable para números grandes. 
+   int distancia;
+   void setup() {
+   pinMode(trigPin, OUTPUT);
+   pinMode(echoPin, INPUT);
+   Serial.begin(9600); // Inicializa la comunicación serial a 9600 bps.
+   servo1.attach(10); // Conecta el servo motor al pin 10. 
+   }
+   void loop() {
+   digitalWrite(trigPin, LOW);
+   delayMicroseconds(2);
+   digitalWrite(trigPin, HIGH);
+   delayMicroseconds(10);
+   digitalWrite(trigPin, LOW);
+   tiempo = pulseIn(echoPin, HIGH);
+   distancia = (tiempo * 0.034) / 2; // Multiplica tiempo de ida y vuelta del pulso en microsegundos por la   velocidad del sonido 340 metros/seg o 0.034 cm/seg dividido por 2 ya que es ida y vuelta.
+   Serial.println(distancia);
+   delay(500);
+   if (distancia &lt;= 50) {
     servo1.write(180); // Si la distancia es menor o igual a 50 cm, gira el servo motor a 180 grados.
-  } else {
+   } else {
     servo1.write(0); // De lo contrario, lo gira a 0 grados.
-  }
-}</p>
+   }
+   }</p>
 <p>Paso 5: Diseño y Fabricación del Objeto</p>
 <ol>
 <li>
