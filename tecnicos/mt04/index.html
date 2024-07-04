@@ -678,27 +678,34 @@ Conecté un segundo LED al pin digital 12 para indicar el estado del botón.</p>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Enlace</title>
+    <title>Video</title>
     <style>
-        .video-link {
-            display: block;
+        .video-container {
             text-align: center;
-            text-decoration: none;
-            color: black;
+            margin: 0 auto;
         }
 
         .video-link img {
-            display: block;
-            margin-right: 10px;
+            width: 100%;
+            height: auto;
+            border: none;
+        }
+
+        .video-text {
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 18px; /* Ajusta el tamaño del texto según tus necesidades */
+            color: #000;
         }
     </style>
 </head>
 <body>
-    <p>Haz clic en el siguiente video para verlo:</p>
-    <a href="https://www.youtube.com/watch?v=WfXbkMV8ucY" target="_blank" class="video-link">
-        <img src="https://img.youtube.com/vi/WfXbkMV8ucY/0.jpg" alt="Video Thumbnail" width="120">
-        Ver video
-    </a>
+    <div class="video-container">
+        <a href="https://www.youtube.com/watch?v=WfXbkMV8ucY" class="video-link" target="_blank">
+            <img src="https://img.youtube.com/vi/WfXbkMV8ucY/0.jpg" alt="Haz clic en el siguiente video para verlo">
+        </a>
+        <div class="video-text">Haz clic en el siguiente video para verlo</div>
+    </div>
 </body>
 </html>
 
@@ -810,7 +817,6 @@ Herramientas y Materiales Utilizados</p>
         .video-container {
             text-align: center;
             margin: 0 auto;
-            width: 400px; /* Ajusta el tamaño según tus necesidades */
         }
 
         .video-link img {
