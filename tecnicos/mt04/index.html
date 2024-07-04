@@ -653,7 +653,7 @@ Conecté un segundo LED al pin digital 12 para indicar el estado del botón.</p>
    if (currentButtonState == HIGH && lastButtonState == LOW) {  
     }  
     blinkEnabled = !blinkEnabled; // Cambio de estado del parpadeo  
-    delay(50); // Debounce (antirrebote)  
+    delay(50); //prueba para ver si no genera error
    } 
    lastButtonState = currentButtonState; // Actualiza estado del botón  
    // Controla el LED de estado según el estado del parpadeo  
@@ -673,7 +673,8 @@ Conecté un segundo LED al pin digital 12 para indicar el estado del botón.</p>
    }
 </code></pre>
 
-<p><br></p>
+<p>Simulacion en Tinkercad
+<img alt="" src="../../images/mt04/tink3.jpg" /></p>
 <!DOCTYPE html>
 <html lang="es">
 <head>
