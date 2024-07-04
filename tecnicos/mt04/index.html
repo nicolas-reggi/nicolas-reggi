@@ -739,10 +739,10 @@ Herramientas y Materiales Utilizados</p>
 3.  Seguí tutoriales para copiar los códigos iniciales y comencé a experimentar con las simulaciones.</p>
 <p>Paso 2: Dificultades Iniciales y Resolución
 •   Aunque las simulaciones en Tinkercad funcionaban correctamente, el código no respondía cuando lo cargaba en la placa Arduino,(esto me paso en 4 oportunidades y  con códigos diferentes).
-•   Consulté con el profesor durante la clase, quien explicó detalladamente cada paso y las  funciones de comando del código.
-•   Genere un código sin librería donde funcionó correctamente el sensor y pude verificarlo en el monitor serial.</p>
-<p>Paso 3: Código para Medir Distancia
-•   Una vez que entendí el funcionamiento básico, modifiqué el código para medir la distancia en centímetros:</p>
+•   Consulté con el profesor durante la clase, quien explicó detalladamente cada paso y las  funciones de comando del código.</p>
+<p>Simulacion en Tinkercad.
+<img alt="" src="../../images/mt04/tink1.jpg" /></p>
+<p>•   Genere un código sin librería donde funcionó correctamente el sensor y pude verificarlo en el monitor serial.</p>
 <pre><code>
  int trigPin = 12;
  int echoPin = 11;
@@ -754,6 +754,36 @@ Herramientas y Materiales Utilizados</p>
   Serial.begin(9600);
  }
  void loop() {
+</code></pre>
+
+<p>Paso 3: Código para Medir Distancia
+•   Una vez que entendí el funcionamiento básico, modifiqué el código para medir la distancia en centímetros:</p>
+<pre><code>
+int trigPin = 12; 
+int echoPin = 11; 
+long tiempo; 
+int distancia;
+
+void setup() {
+   pinMode(trigPin, OUTPUT);
+   pinMode(echoPin, INPUT);
+   Serial.begin(9600); //
+}
+
+void loop() {
+   digitalWrite(trigPin, LOW);
+   delayMicroseconds(2);
+   digitalWrite(trigPin, HIGH);
+   delayMicroseconds(10);
+   digitalWrite(trigPin, LOW);
+   tiempo = pulseIn(echoPin, HIGH);
+   distancia = (tiempo * 0.034) / 2; 
+   //Multiplica tiempo de ida y vuelta microsegundos
+   //x velocidad del sonido 340 metros/seg (0.034 cm/seg)
+   //dividido por 2 (ida y vuelta)
+   Serial.println(distancia);
+   delay(500);
+}
 </code></pre>
 
 <p>Paso 4: Integración del Servomotor
@@ -793,6 +823,9 @@ Herramientas y Materiales Utilizados</p>
    }
 </code></pre>
 
+<p>Simulacion en Tinkercad
+<img alt="" src="../../images/mt04/tink2.jpg" />
+<br></p>
 <p>Paso 5: Diseño y Fabricación del Objeto</p>
 <ol>
 <li>
