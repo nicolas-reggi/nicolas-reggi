@@ -7,7 +7,7 @@ Este repositorio contiene los proyectos en los que he trabajado, incluyendo mis 
 ## Proyectos de Arduino
 
 - [Sensor de distancia](./docs/proyecto/arduino_projects/sensor_distancia/ensor_distancia.ino) - Proyecto que utiliza un sensor de distancia y un servomotor.
-- [potenciometro blink](./docs/proyecto/arduino_projects/potenciometro_blink) - proyecto poteciometro de parpadeo led.
+- [blink con potenciometro](./docs/proyecto/arduino_projects/blink_potenciometro/link_potenciometro) - proyecto de parpadeo led modificado por poteciometro .
 
 ## Secciones del Repositorio
 
