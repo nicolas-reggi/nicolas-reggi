@@ -590,7 +590,7 @@
 <p>• Desventajas: Tecnología en desarrollo, cara y con menos soporte técnico disponible.</p>
 <h2><b>Tecnologías de Impresión</b></h2>
 
-<h3><b>Modelado por Deposición Fundida</b></h3>
+<h3><b>FDM (Modelado por Deposición Fundida)</b></h3>
 
 <p>•   Proceso: Utiliza filamento termoplástico extruido a través de una boquilla para construir objetos capa por capa.</p>
 <p>•   Ventajas: Económico y fácil de usar.</p>
@@ -643,8 +643,7 @@
 <p>•   Aplicaciones: Piezas industriales, componentes de alta resistencia.</p>
 <h2><b>Software Slicer</b></h2>
 
-<p>El software slicer traduce modelos 3D en comandos GCODE para impresoras 3D. Divide el modelo en capas y genera instrucciones precisas para la impresora.</p>
-<p>A continuacion detallo algunos ejemplos:</p>
+<p>El software slicer traduce modelos 3D en comandos GCODE para impresoras 3D, dividiendo el modelo en capas y generando instrucciones precisas para la impresora; algunos ejemplos a continuación:</p>
 <h3><b>Cura</b></h3>
 
 <p>•   Descripción: Código abierto, fácil de usar, compatible con muchas impresoras.</p>
@@ -686,17 +685,13 @@
 <h2><b>Operación de la Máquina</b></h2>
 <h3><b>Medidas de Seguridad</b></h3>
 
-<p>•   Equipo de Protección Personal: Usar guantes y gafas.</p>
-<p>•   Precauciones con Partes Calientes: Evitar tocar partes calientes de la impresora.</p>
+<p>•   Equipo de Protección Personal: Usar guantes y lentes de protecciòn.</p>
+<p>•   Precauciones con Partes Calientes: Evitar tocar partes calientes como cama o cabezal hotend.</p>
 <p>•   Recomendaciones del Fabricante: Seguir las guías para evitar accidentes.</p>
 <h3><b>Mantenimiento y Configuración de la Máquina</b></h3>
 
 <p>•   Calibración Regular: Asegura la adhesión y precisión de las impresiones.</p>
 <p>•   Uso de Adhesivos y Bases Calefaccionadas: Evita problemas de warping.</p>
-<h3><b>Plataforma de Adherencia</b></h3>
-
-<p>•   Brim: Estructura de una sola capa alrededor de la primera capa del modelo.</p>
-<p>•   Raft: Base de varias capas debajo del modelo, proporciona mejor adhesión.</p>
 <h3><b>Conclusión</b></h3>
 
 <p>La integración de CAD y CAM, junto con el uso de impresoras 3D y software slicer adecuado, permite la producción de piezas de alta calidad y precisión. </p>
@@ -708,22 +703,26 @@
 <p>Proceso de Tratamiento con Slicer 3D IdeaMaker y Generación de Archivo Imprimible</p>
 <p>A continuación, detallo el proceso paso a paso seguido para generar un archivo imprimible utilizando el Slicer 3D IdeaMaker como parte del módulo de fabricación digital. La consigna consta de 11 pasos documentados con capturas de pantalla y descripciones contenidas en esta página.</p>
 <h1 id="paso-1">Paso 1:<a class="headerlink" href="#paso-1" title="Permanent link">&para;</a></h1>
-<h1 id="descargar-el-archivo-modelomt05_efdi">Descargar el Archivo ModeloMT05_EFDI<a class="headerlink" href="#descargar-el-archivo-modelomt05_efdi" title="Permanent link">&para;</a></h1>
+<h3><b>Descargar el Archivo ModeloMT05_EFDI</b></h3>
+
 <p>Descargué el archivo ModeloMT05_EFDI desde el link que nos indica la consigna.</p>
 <p><img alt="" src="../../images/mt05/imp01.jpg" /></p>
 <h1 id="paso-2">Paso 2:<a class="headerlink" href="#paso-2" title="Permanent link">&para;</a></h1>
-<h1 id="abrir-y-exportar-el-archivo-en-fusion-360">Abrir y Exportar el Archivo en Fusión 360<a class="headerlink" href="#abrir-y-exportar-el-archivo-en-fusion-360" title="Permanent link">&para;</a></h1>
+<h3><b>Abrir y Exportar el Archivo en Fusión 360</b></h3>
+
 <p>Abrí el archivo ModeloMT05_EFDI en Fusión 360. </p>
 <p>Una vez abierto, fui a utilidades - crear - impresion en 3d, verifique que fuera formato STL (binario) - desmarque la opcion enviar a utilidad - le di aceptar y luego lo exporté guardando el archivo en mi escritorio. El formato .STL define la geometría del objeto, y la opción (binario) la elegimos para que el archivo sea más liviano.</p>
 <p><img alt="" src="../../images/mt05/imp02b.jpg" /></p>
 <h1 id="paso-3">Paso 3:<a class="headerlink" href="#paso-3" title="Permanent link">&para;</a></h1>
-<h1 id="importar-el-archivo-stl-en-ideamaker">Importar el Archivo .STL en IdeaMaker<a class="headerlink" href="#importar-el-archivo-stl-en-ideamaker" title="Permanent link">&para;</a></h1>
+<h3><b>Importar el Archivo .STL en IdeaMaker</b></h3>
+
 <p>Importé el archivo .STL al software Slicer 3D IdeaMaker (de la </p>
 <p>marca de impresoras de fdm RAISE 3D utilizados en los fab labs de UTEC). </p>
 <p><img alt="" src="../../images/mt05/imp03b.jpg" /></p>
 <p>Este software permite preparar el modelo 3D dividiéndolo en capas horizontales, generando un archivo de código G que especifica los movimientos del cabezal de la impresora, la velocidad de impresión, la cantidad de material a extruir y otros parámetros importantes asegurando que se imprima correctamente y con la mejor calidad posible.</p>
 <h1 id="paso-4">Paso 4:<a class="headerlink" href="#paso-4" title="Permanent link">&para;</a></h1>
-<h1 id="ubicar-la-pieza-en-ideamaker">Ubicar la Pieza en IdeaMaker<a class="headerlink" href="#ubicar-la-pieza-en-ideamaker" title="Permanent link">&para;</a></h1>
+<h3><b>Ubicar la Pieza en IdeaMaker</b></h3>
+
 <p>Ubique la pieza en la posición más conveniente para su fabricación, utilizando los comandos &ldquo;Mover&rdquo; y &ldquo;Rotar&rdquo; en IdeaMaker. </p>
 <p><img alt="" src="../../images/mt05/imp05.jpg" /></p>
 <p>Modifiqué ángulos tanto en el eje X como en el eje Y pasándolos de 0 a 90 grados. La correcta ubicación asegura una impresión óptima y minimiza la necesidad de soportes. 
@@ -733,37 +732,44 @@ foto</p>
 <p>Finalmente, teniendo en cuenta los detalles de diseño propios de la pieza y la necesidad de lograr una buena terminación, opté por la posición original y dejé todo a 0 grados.</p>
 <p><img alt="" src="../../images/mt05/imp09.jpg" /></p>
 <h1 id="paso-5">Paso 5:<a class="headerlink" href="#paso-5" title="Permanent link">&para;</a></h1>
-<h1 id="escalar-el-archivo">Escalar el Archivo<a class="headerlink" href="#escalar-el-archivo" title="Permanent link">&para;</a></h1>
+<h3><b>Escalar el Archivo</b></h3>
+
 <p>Escalé el archivo, aumentando su tamaño al 150% mientras mantenía las proporciones. Esto asegura que el modelo final tenga el tamaño solicitado para su aplicación.</p>
 <p><img alt="" src="../../images/mt05/imp09b.jpg" /></p>
 <h1 id="paso-6">Paso 6:<a class="headerlink" href="#paso-6" title="Permanent link">&para;</a></h1>
-<h1 id="generar-soportes-y-base-de-construccion">Generar Soportes y Base de Construcción<a class="headerlink" href="#generar-soportes-y-base-de-construccion" title="Permanent link">&para;</a></h1>
+<h3><b>Generar Soportes y Base de Construcción</b></h3>
+
 <p>Generé los soportes y la base de construcción del tipo BALSA. Los soportes se utilizan para sostener partes del modelo que sobresalen y podrían caerse o deformarse durante la impresión. </p>
 <p>La base de tipo balsa es una estructura plana que mejora la adhesión del modelo a la plataforma de impresión y reduce el warping, y la utilizo frecuentemente por sus buenos resultados a pesar de aumentar el tiempo de impresión.</p>
 <p><img alt="" src="../../images/mt05/imp10b.jpg" /></p>
 <h1 id="paso-7">Paso 7:<a class="headerlink" href="#paso-7" title="Permanent link">&para;</a></h1>
-<h1 id="seleccionar-altura-de-capa-y-perimetros-de-pared">Seleccionar Altura de Capa y Perímetros de Pared<a class="headerlink" href="#seleccionar-altura-de-capa-y-perimetros-de-pared" title="Permanent link">&para;</a></h1>
+<h3><b>Seleccionar Altura de Capa y Perímetros de Pared</b></h3>
+
 <p>Seleccioné una altura de capa de 0.2 mm y configuré 2 perímetros de pared para el modelo. </p>
 <p><img alt="" src="../../images/mt05/imp11b.jpg" /></p>
 <p>La altura de capa determina el grosor de cada capa de material depositada, afectando la resolución y el tiempo de impresión. </p>
 <p>Los perímetros de pared son las capas exteriores del modelo, que afectan la resistencia y calidad superficial.</p>
 <h1 id="paso-8">Paso 8:<a class="headerlink" href="#paso-8" title="Permanent link">&para;</a></h1>
-<h1 id="seleccionar-el-extrusor">Seleccionar el Extrusor<a class="headerlink" href="#seleccionar-el-extrusor" title="Permanent link">&para;</a></h1>
+<h3><b>Seleccionar el Extrusor</b></h3>
+
 <p>Seleccioné el extrusor izquierdo (pico) para realizar el código. Esta configuración es esencial en equipos de más de un extrusor, como en este caso.</p>
 <p><img alt="" src="../../images/mt05/imp12b.jpg" /></p>
 <h1 id="paso-9">Paso 9:<a class="headerlink" href="#paso-9" title="Permanent link">&para;</a></h1>
-<h1 id="generar-corte-del-modelo">Generar Corte del Modelo<a class="headerlink" href="#generar-corte-del-modelo" title="Permanent link">&para;</a></h1>
+<h3><b>Generar Corte del Modelo</b></h3>
+
 <p>Generé el feteo o corte del modelo, previsualizando y analizando la construcción en todas sus capas visualmente. </p>
 <p>En este proceso, el modelo se divide en capas horizontales para que la impresora 3D sepa cómo construir el objeto capa por capa. </p>
 <p><img alt="" src="../../images/mt05/imp14b.jpg" /></p>
 <p>En el proceso, podemos ver la base de tipo balsa, los soportes, las diferentes capas y sus alturas, los perímetros, entre otros detalles que se muestran en las siguientes capturas.</p>
 <h1 id="paso-10">Paso 10:<a class="headerlink" href="#paso-10" title="Permanent link">&para;</a></h1>
-<h1 id="exportar-el-codigo-g">Exportar el Código G<a class="headerlink" href="#exportar-el-codigo-g" title="Permanent link">&para;</a></h1>
+<h3><b>Exportar el Código G</b></h3>
+
 <p>Exporté el archivo de Código G con el nombre nicolas_reggi.gcode. </p>
 <p><img alt="" src="../../images/mt05/imp15.jpg" /></p>
 <p>El código G contiene todas las instrucciones necesarias para que la impresora 3D construya el modelo siguiendo los parámetros anteriormente cargados en el slicer.</p>
 <h1 id="paso-11">Paso 11:<a class="headerlink" href="#paso-11" title="Permanent link">&para;</a></h1>
-<h1 id="envio-de-codigo">Envìo de Código.<a class="headerlink" href="#envio-de-codigo" title="Permanent link">&para;</a></h1>
+<h3><b>Envìo de Código</b></h3>
+
 <p>Este es el link de mi gcode listo para imprimir:</p>
 <p>Descargar archivo .gcode <a href="https://github.com/nicolas-reggi/nicolas-reggi/blob/main/docs/proyecto/impresion_3d/practico_mt5/nicolas_reggi.gcode" target="_blank">aquí</a>.</p>
                 
