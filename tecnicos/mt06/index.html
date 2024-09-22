@@ -718,82 +718,100 @@ PubSubClient mqttClient(wifiClient);</p>
 </code></pre></p>
 <p>Puedes descargar el código del modulo emisor aqui. <a href="https://github.com/nicolas-reggi/nicolas-reggi/blob/main/docs/proyecto/arduino_proyects/esp32/moduloemisorv2" target="_blank">aquí</a>.</p>
 
-<p></code></pre></p>
-<h1 id="include_2">include <WiFi.h><a class="headerlink" href="#include_2" title="Permanent link">&para;</a></h1>
-<h1 id="include_3">include <PubSubClient.h><a class="headerlink" href="#include_3" title="Permanent link">&para;</a></h1>
-<h1 id="include-biblioteca-para-controlar-el-servo">include <ESP32Servo.h> // Biblioteca para controlar el servo<a class="headerlink" href="#include-biblioteca-para-controlar-el-servo" title="Permanent link">&para;</a></h1>
-<p>// Configuración de WiFi
-const char* ssid = &ldquo;peque&rdquo;;             // Reemplaza con el nombre de tu red WiFi
-const char* password = &ldquo;lalola319&rdquo;;     // Reemplaza con la contraseña de tu red WiFi
-WiFiClient wifiClient;</p>
-<p>// Configuración de MQTT
-const char* mqttBroker = &ldquo;broker.hivemq.com&rdquo;;
-const char* mqttClientName = &ldquo;nicolas_receptor&rdquo;; // Nombre único para el receptor
-const char* topic = &ldquo;control/servo&rdquo;;             // Tópico MQTT al que nos suscribiremos
-PubSubClient mqttClient(wifiClient);</p>
-<p>Servo myServo;          // Objeto Servo
-const int servoPin = 4; // Pin donde está conectado el servo</p>
-<p>void setup() {</p>
-<p>Serial.begin(115200);
-  Serial.println(&ldquo;Iniciando nicolas receptor&hellip;&rdquo;);</p>
-<p>myServo.attach(servoPin); // Adjuntar el servo al pin definido</p>
-<p>// Conectar al WiFi
-  WiFi.mode(WIFI_STA);
-  WiFi.begin(ssid, password);</p>
-<p>Serial.print(&ldquo;Conectando a WiFi&rdquo;);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(&ldquo;.&rdquo;);
-  }
-  Serial.println(&ldquo;\nConectado a WiFi&rdquo;);
-  Serial.print(&ldquo;Dirección IP: &ldquo;);
-  Serial.println(WiFi.localIP());</p>
-<p>// Configuración de MQTT
-  mqttClient.setServer(mqttBroker, 1883);
-  mqttClient.setCallback(callback);</p>
-<p>mqttConnect(); // Conectar y suscribirse al tópico MQTT
-}</p>
-<p>void loop() {
-  // Verificar si seguimos conectados al broker MQTT
-  if (!mqttClient.connected()) {
-    mqttConnect();
-  }</p>
-<p>// Mantener la conexión MQTT
-  mqttClient.loop();
-}</p>
-<p>void mqttConnect() {
-  while (!mqttClient.connected()) {
-    Serial.print(&ldquo;Intentando conectar al MQTT&hellip;&rdquo;);
-    if (mqttClient.connect(mqttClientName)) {
-      Serial.println(&ldquo;Conectado al broker MQTT&rdquo;);
-      mqttClient.subscribe(topic); // Suscribirse al tópico MQTT
-    } else {
-      Serial.print(&ldquo;Falló, rc=&rdquo;);
-      Serial.print(mqttClient.state());
-      Serial.println(&ldquo;. Intentando de nuevo en 5 segundos&rdquo;);
-      delay(5000);
+<pre><code>
+    #include &lt;WiFi.h&gt;
+    #include &lt;PubSubClient.h&gt;
+    #include &lt;ESP32Servo.h&gt; // Biblioteca para controlar el servo
+
+    // Configuración de WiFi
+    const char* ssid = "peque";             // Reemplaza con el nombre de tu red WiFi
+    const char* password = "lalola319";     // Reemplaza con la contraseña de tu red WiFi
+    WiFiClient wifiClient;
+
+    // Configuración de MQTT
+    const char* mqttBroker = "broker.hivemq.com";
+    const char* mqttClientName = "nicolas_receptor"; // Nombre único para el receptor
+    const char* topic = "control/servo";             // Tópico MQTT al que nos suscribiremos
+    PubSubClient mqttClient(wifiClient);
+
+    Servo myServo;          // Objeto Servo
+    const int servoPin = 4; // Pin donde está conectado el servo
+
+    void setup() {
+
+      Serial.begin(115200);
+      Serial.println("Iniciando nicolas receptor...");
+
+      myServo.attach(servoPin); // Adjuntar el servo al pin definido
+
+      // Conectar al WiFi
+      WiFi.mode(WIFI_STA);
+      WiFi.begin(ssid, password);
+
+      Serial.print("Conectando a WiFi");
+      while (WiFi.status() != WL_CONNECTED) {
+        delay(500);
+        Serial.print(".");
+      }
+      Serial.println("\nConectado a WiFi");
+      Serial.print("Dirección IP: ");
+      Serial.println(WiFi.localIP());
+
+      // Configuración de MQTT
+      mqttClient.setServer(mqttBroker, 1883);
+      mqttClient.setCallback(callback);
+
+      mqttConnect(); // Conectar y suscribirse al tópico MQTT
     }
-  }
-}</p>
-<p>// Función callback para manejar los mensajes entrantes
-void callback(char* topic, byte* payload, unsigned int length) {
-  String incomingMessage = &ldquo;&rdquo;;
-  for (unsigned int i = 0; i &lt; length; i++){
-    incomingMessage += (char)payload[i];
-  } 
-  Serial.print(&ldquo;Mensaje recibido [&ldquo;);
-  Serial.print(topic);
-  Serial.print(&ldquo;]: &ldquo;);
-  Serial.println(incomingMessage);</p>
-<p>int angle = incomingMessage.toInt(); // Convertir el mensaje a entero (ángulo)</p>
-<p>// Asegurarse de que el ángulo esté entre 0 y 180 grados
-  if (angle &lt; 0) angle = 0;
-  if (angle &gt; 180) angle = 180;</p>
-<p>myServo.write(angle); // Mover el servo al ángulo recibido
-  Serial.print(&ldquo;Servo movido a: &ldquo;);
-  Serial.println(angle);
-}
-</code></pre></p>
+
+    void loop() {
+      // Verificar si seguimos conectados al broker MQTT
+      if (!mqttClient.connected()) {
+        mqttConnect();
+      }
+
+      // Mantener la conexión MQTT
+      mqttClient.loop();
+    }
+
+    void mqttConnect() {
+      while (!mqttClient.connected()) {
+        Serial.print("Intentando conectar al MQTT...");
+        if (mqttClient.connect(mqttClientName)) {
+          Serial.println("Conectado al broker MQTT");
+          mqttClient.subscribe(topic); // Suscribirse al tópico MQTT
+        } else {
+          Serial.print("Falló, rc=");
+          Serial.print(mqttClient.state());
+          Serial.println(". Intentando de nuevo en 5 segundos");
+          delay(5000);
+        }
+      }
+    }
+
+    // Función callback para manejar los mensajes entrantes
+    void callback(char* topic, byte* payload, unsigned int length) {
+      String incomingMessage = "";
+      for (unsigned int i = 0; i < length; i++){
+        incomingMessage += (char)payload[i];
+      } 
+      Serial.print("Mensaje recibido [");
+      Serial.print(topic);
+      Serial.print("]: ");
+      Serial.println(incomingMessage);
+
+      int angle = incomingMessage.toInt(); // Convertir el mensaje a entero (ángulo)
+
+      // Asegurarse de que el ángulo esté entre 0 y 180 grados
+      if (angle < 0) angle = 0;
+      if (angle > 180) angle = 180;
+
+      myServo.write(angle); // Mover el servo al ángulo recibido
+      Serial.print("Servo movido a: ");
+      Serial.println(angle);
+    }
+  </code></pre>
+
 <p>Puedes descargar el código del modulo receptor aqui. <a href="https://github.com/nicolas-reggi/nicolas-reggi/blob/main/docs/proyecto/arduino_proyects/esp32/moduloreceptorv2" target="_blank">aquí</a>.</p>
 
 <h2><b>Mi experiencia con ESP32</b></h2>
