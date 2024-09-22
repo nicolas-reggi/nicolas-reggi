@@ -615,10 +615,12 @@ Este enfoque tiene varias ventajas:</p>
 <h2><b>Ejercicio 1): Control de un LED a través de comunicación serial</b></h2>
 
 <p>Este ejercicio consistió en simular el control de un LED con un ESP32 mediante una conexión serial y un botón físico. A través de comandos simples como &ldquo;on&rdquo; y &ldquo;off&rdquo;, se pudo encender y apagar el LED, mientras que el botón llevaba un conteo de las pulsaciones. El ejercicio no presentó dificultades y permitió familiarizarse con el funcionamiento básico de la comunicación serial y el control de salidas digitales.</p>
+<p><img alt="" src="../../images/mt06/ejr1.jpg" /></p>
 <h2><b>Ejercicio 2): Control de un LED POR WiFi y MQTT. </b></h2>
 
 <p>En este ejercicio nuevamente se controló un LED mediante un ESP32 pero esta vez conectado a una red WiFi y utilizando un servidor MQTT. </p>
 <p>El botón físico permitía enviar mensajes a un topic MQTT, mientras que el estado del LED era controlado por comandos recibidos desde otro topic. </p>
+<p><img alt="" src="../../images/mt06/ejr2.jpg" /></p>
 <p>Durante el proceso, me enfrenté a algunos desafíos, como la selección incorrecta de la placa en Arduino IDE, lo que generaba errores de programación. </p>
 <p>Aunque no pude probar el ejercicio con otro compañero debido a los horarios, logré solucionar estos problemas y avanzar en la práctica.</p>
 <h2><b>Ejercicio 3): Encendido de un Neopixel.</b></h2>
@@ -636,6 +638,9 @@ Este enfoque tiene varias ventajas:</p>
 <p>•   Configuración eléctrica: Gracias a las recomendaciones del docente, incorporé una resistencia de 10kΩ como pull-up entre el sensor y la alimentación.</p>
 <p>•   Asignación de pines: Cambié de pin después de investigar y descubrir que no todos los pines son compatibles para este uso.</p>
 <p>Finalmente, logré hacer funcionar el LDR y leer las lecturas de iluminación en la plataforma Pi4, generando diferentes gráficas, lo que me dejó muy satisfecho.</p>
+<p><img alt="" src="../../images/mt06/ejr4a.jpg" /></p>
+<p><img alt="" src="../../images/mt06/ejr4b.jpg" /></p>
+<p><img alt="" src="../../images/mt06/ejr4c.jpg" /></p>
 <h2><b>Proyecto Adicional: Comunicación entre dos ESP32</b></h2>
 
 <p>Motivado por los resultados, me animé a dar otro paso, siguiendo la sugerencia del docente  Josep. El objetivo era conectar dos placas ESP32 para que se comunicaran entre sí; una utilizaría un potenciómetro como controlador y la otra placa un servomotor, empleando MQTT y la conexión Wi-Fi.</p>
