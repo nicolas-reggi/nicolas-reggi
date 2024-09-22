@@ -602,13 +602,13 @@ Este enfoque tiene varias ventajas:</p>
 <p>Este microcontrolador es ideal para proyectos IoT donde se necesita intercambiar datos con la nube o controlar dispositivos de manera remota. La posibilidad de utilizarlo con baterías lo convierte en una opción excelente para aplicaciones portátiles o sistemas de monitoreo.</p>
 <p>Para finalizar el primer módulo, el docente nos planteó cuatro ejercicios como tarea, los cuales, además de simularlos en la plataforma Wokwi, teníamos que hacer la prueba real con nuestra placa ESP32.</p>
 <p>Esto nos desafió, ya que fue poco tiempo para familiarizarnos con el tema.</p>
-<h2><b>Primeros Pasos con ESP32 y Configuración de Arduino</b></h2>
+<h2><b>Primeros pasos con ESP32 y configuración de Arduino</b></h2>
 
 <p>Luego de realizar las primeras pruebas sin completar la totalidad de los ejercicios, pude compartir mi experiencia en la segunda clase de revisión, donde se explicaron los pasos necesarios para comenzar a trabajar con el ESP32 en el entorno de Arduino. </p>
 <p>Lo primero fue instalar las definiciones de la placa en Arduino IDE, lo que permitió programarla con el código adecuado. Este paso es crucial, ya que una configuración incorrecta puede generar problemas al compilar y cargar el código en la placa.</p>
 <p>El proceso incluyó agregar un enlace en las preferencias del IDE de Arduino para descargar las herramientas necesarias. Luego se instaló la librería PubSubClient, indispensable para realizar proyectos de comunicación mediante MQTT. Esta librería permite que la placa se conecte a un servidor MQTT y gestione las publicaciones y suscripciones de mensajes.</p>
 <p>Sin dudas, este repaso contribuyó a entender muchas cosas que no comprendía anteriormente.</p>
-<h2><b>Ejercicios Prácticos y Experiencias</b></h2>
+<h2><b>Ejercicios prácticos y experiencias</b></h2>
 
 <p>Los ejercicios propuestos incluían la programación de un ESP32 para conectarse a una red Wi-Fi, suscribirse a un tópico MQTT y controlar un LED desde mensajes publicados en el servidor. </p>
 <p>El trabajo requería la simulación de estos ejercicios antes de ejecutarlos en hardware real, utilizando plataformas como Wokwi, que ofrece un entorno virtual para programar y probar placas de desarrollo sin riesgo de dañar el equipo físico.</p>
@@ -616,14 +616,14 @@ Este enfoque tiene varias ventajas:</p>
 
 <p>Este ejercicio consistió en simular el control de un LED con un ESP32 mediante una conexión serial y un botón físico. A través de comandos simples como &ldquo;on&rdquo; y &ldquo;off&rdquo;, se pudo encender y apagar el LED, mientras que el botón llevaba un conteo de las pulsaciones. El ejercicio no presentó dificultades y permitió familiarizarse con el funcionamiento básico de la comunicación serial y el control de salidas digitales.</p>
 <p><img alt="" src="../../images/mt06/ejr1.jpg" /></p>
-<h2><b>Ejercicio 2): Control de un LED POR WiFi y MQTT. </b></h2>
+<h2><b>Ejercicio 2): Control de un LED por WiFi y MQTT. </b></h2>
 
 <p>En este ejercicio nuevamente se controló un LED mediante un ESP32 pero esta vez conectado a una red WiFi y utilizando un servidor MQTT. </p>
 <p>El botón físico permitía enviar mensajes a un topic MQTT, mientras que el estado del LED era controlado por comandos recibidos desde otro topic. </p>
 <p><img alt="" src="../../images/mt06/ejr2.jpg" /></p>
 <p>Durante el proceso, me enfrenté a algunos desafíos, como la selección incorrecta de la placa en Arduino IDE, lo que generaba errores de programación. </p>
 <p>Aunque no pude probar el ejercicio con otro compañero debido a los horarios, logré solucionar estos problemas y avanzar en la práctica.</p>
-<h2><b>Ejercicio 3): Encendido de un Neopixel.</b></h2>
+<h2><b>Ejercicio 3): Encendiendo de un Neopixel.</b></h2>
 
 <p>En este  ejercicio, se utilizó un ESP32 conectado a un servidor MQTT para controlar un NeoPixel, enviando mensajes a través de topics MQTT para cambiar el color del LED.</p>
 <p>No fue posible realizar este ejercicio de forma física, por lo que se llevó a cabo solo en simulación, ya que contaba con un LED RGB y no logré conseguir un NeoPixel localmente. </p>
@@ -654,6 +654,11 @@ Este enfoque tiene varias ventajas:</p>
 <p>•   Alimentación del servo: El servomotor no funcionaba correctamente al estar conectado a 3.5 V; requería 5 V. Al proporcionar el voltaje adecuado, funcionó bien.</p>
 <p>•   Cables inadecuados: Descubrí que uno de mis cables era solo de carga y no permitía la transferencia de datos.</p>
 <p>Después de resolver estos problemas, logré que el emisor y el receptor funcionaran correctamente. El potenciómetro controlaba remotamente el servo de la segunda placa de forma exitosa. Este logro me entusiasma para incluir esta funcionalidad en el proyecto del trabajo final de la especialización:</p>
+<p>Puedes descargar el código del modulo receptor aqui. <a href="https://github.com/nicolas-reggi/nicolas-reggi/blob/main/docs/proyecto/arduino_proyects/esp32/moduloreceptorv2" target="_blank">aquí</a>.</p>
+
+<p>espacio</p>
+<p>Puedes descargar el código del modulo emisor aqui. <a href="https://github.com/nicolas-reggi/nicolas-reggi/blob/main/docs/proyecto/arduino_proyects/sensor_distancia/sensor_distancia.ino" target="_blank">aquí</a>.</p>
+
 <h2><b>Mi experiencia con ESP32</b></h2>
 
 <p>Estos ejercicios me exigieron aplicar lo aprendido e investigar más. Aunque el ESP32 comparte conceptos con Arduino, sus mayores posibilidades presentaron nuevos desafíos, especialmente en la instalación y configuración del entorno de desarrollo.</p>
