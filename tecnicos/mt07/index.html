@@ -711,12 +711,9 @@ void serialEvent(Serial myPort) {
     }
   }
 }
-<pre><code>
+</code></pre>
 
-
-El siguiente codigo de Arduino se utiliza para la programacion del ESP32
-
-
+<p>El siguiente codigo de Arduino se utiliza para la programacion del ESP32</p>
 <pre><code>
 // Definir el pin para el potenciómetro o LDR
 const int sensorPin = 34;  // Pin analógico del ESP32 para leer el sensor (ajustar según tu conexión)
@@ -741,36 +738,22 @@ void loop() {
   // Pausar por un breve periodo antes de enviar el siguiente valor
   delay(500);
 }
-<pre><code>
+</code></pre>
 
-
-Explicacion: 
-
-
-Configuro el pin 34 del ESP32 para leer valores analógicos de una resistencia o sensor LDR. 
-
-El ESP32 se comunica con Processing mediante la comunicación serial, que está configurada a 9600 baudios. Esto permite enviar datos cada 500 milisegundos para no saturar de información a Processing.
-
-
-Para obtener el valor del sensor, utilizo el comando analogRead(sensorPin), que lee los valores del potenciómetro o LDR, los cuales varían entre 0 y 4095 (correspondiente a la intensidad del brillo). 
-
-Sin embargo, en lugar de trabajar con estos números grandes, he utilizado la función map() para convertir este rango a un porcentaje de 0 a 100 como ya lo utilize en ejercicios anteriores de arduino. 
-
-Esto facilita la interpretación del valor del  brillo en Processing, que lo usa para mostrar visualmente una barra de progreso que representa la intensidad de la luz.
-
-
-Así, el ESP32 envía los valores del brillo y Processing los muestra en tiempo real, proporcionando una interfaz gráfica basica para visualizar los cambios en el brillo de la luz.
-
+<p>Explicacion: </p>
+<p>Configuro el pin 34 del ESP32 para leer valores analógicos de una resistencia o sensor LDR. </p>
+<p>El ESP32 se comunica con Processing mediante la comunicación serial, que está configurada a 9600 baudios. Esto permite enviar datos cada 500 milisegundos para no saturar de información a Processing.</p>
+<p>Para obtener el valor del sensor, utilizo el comando analogRead(sensorPin), que lee los valores del potenciómetro o LDR, los cuales varían entre 0 y 4095 (correspondiente a la intensidad del brillo). </p>
+<p>Sin embargo, en lugar de trabajar con estos números grandes, he utilizado la función map() para convertir este rango a un porcentaje de 0 a 100 como ya lo utilize en ejercicios anteriores de arduino. </p>
+<p>Esto facilita la interpretación del valor del  brillo en Processing, que lo usa para mostrar visualmente una barra de progreso que representa la intensidad de la luz.</p>
+<p>Así, el ESP32 envía los valores del brillo y Processing los muestra en tiempo real, proporcionando una interfaz gráfica basica para visualizar los cambios en el brillo de la luz.</p>
 <h3><b>Ejercicio 3</b></h3>
 
 <h3><b>Ejercicio 4</b></h3>
 
-
-
 <h2><b>Reflexión final</b></h2>
 
-
-Este módulo me resultó complejo debido a la cantidad de información que debimos procesar en un tiempo limitado. La diversidad de programas que nos presentaron hizo más difícil profundizar en cada herramienta y entender su aplicación en detalle. Sin embargo, como reflexión general, considero que es esencial aprender a programar y experimentar con distintos lenguajes, ya que esto me permitirá seleccionar las herramientas más adecuadas según las necesidades de cada proyecto. Además, comprendí la importancia de plasmar claramente mis ideas, tener bien definido qué quiero lograr y cómo hacerlo. Al trabajar con interfaces y aplicaciones, cada paso debe estar cuidadosamente planificado para abordar problemas de manera eficiente y efectiva.
+<p>Este módulo me resultó complejo debido a la cantidad de información que debimos procesar en un tiempo limitado. La diversidad de programas que nos presentaron hizo más difícil profundizar en cada herramienta y entender su aplicación en detalle. Sin embargo, como reflexión general, considero que es esencial aprender a programar y experimentar con distintos lenguajes, ya que esto me permitirá seleccionar las herramientas más adecuadas según las necesidades de cada proyecto. Además, comprendí la importancia de plasmar claramente mis ideas, tener bien definido qué quiero lograr y cómo hacerlo. Al trabajar con interfaces y aplicaciones, cada paso debe estar cuidadosamente planificado para abordar problemas de manera eficiente y efectiva.</p>
                 
                   
                     
