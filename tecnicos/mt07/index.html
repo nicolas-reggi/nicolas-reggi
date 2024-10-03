@@ -639,8 +639,13 @@
 
 <h3><b>Ejercicio 1</b></h3>
 
+<h3><b>Encender led en esp32 con arduino y Processing</b></h3>
+
+<p>falta documentar....</p>
 <h3><b>Ejercicio 2</b></h3>
-<p>Lectura de ldr en web de arduino</p>
+
+<h3><b>Lectura de ldr en web de arduino con Processing</b></h3>
+
 <p>El siguiente código esta realizado en Processing, este  se comunica con un ESP32 a través de un puerto serial para recibir datos del brillo de la luz ambiente y mostrarlos visualmente. </p>
 <p>Utiliza la librería processing.serial.* para establecer la conexión serial y recibir los datos.</p>
 <p>El valor del brillo recibido se muestra en una ventana con una barra de progreso y el porcentaje correspondiente.</p>
@@ -748,9 +753,136 @@ void loop() {
 <p>Esto facilita la interpretación del valor del  brillo en Processing, que lo usa para mostrar visualmente una barra de progreso que representa la intensidad de la luz.</p>
 <p>Así, el ESP32 envía los valores del brillo y Processing los muestra en tiempo real, proporcionando una interfaz gráfica basica para visualizar los cambios en el brillo de la luz.</p>
 <h3><b>Ejercicio 3</b></h3>
+<h3><b>Led y potenciometro con Python 3</b></h3>
 
+<p>Este ejercicio consiste en la creación de una interfaz gráfica en Python y un código en Arduino que permiten controlar un LED y leer el valor de un potenciómetro en una placa ESP32.</p>
+<p>En Python, utilicé la biblioteca Tkinter para crear una ventana que permite interactuar con el ESP32 a través de botones para encender y apagar un LED, además de una barra de progreso que muestra el valor de un potenciómetro. </p>
+<p>La comunicación entre el ESP32 y la PC se realiza mediante el puerto serial. Cuando presiono el botón &ldquo;Encender LED&rdquo;, el programa envía un comando a través del puerto serial para activar el LED en la placa. Lo mismo ocurre con el botón &ldquo;Apagar LED&rdquo;. </p>
+<p>Mientras tanto, según la recomendación de un Maker genere un segundo hilo, el valor del potenciómetro es leído constantemente y se muestra en la barra de progreso como un porcentaje.</p>
+<p>Este fue segundo acercamientos a Python, lo que me permitió entender cómo manejar interfaces gráficas simples y la comunicación serial.</p>
+<pre><code>
+import tkinter as tk
+from tkinter import ttk
+import serial
+import threading
+
+# Configurar el puerto serial
+ser = serial.Serial('COM4', 115200, timeout=1)  # Ajusta (COM que sea)
+
+# Función para encender el LED
+def encender_led():
+    ser.write(b'encender\n')  # Enviar comando al ESP32
+    print("Comando enviado: Encender LED de la placa")
+
+# Función para apagar el LED
+def apagar_led():
+    ser.write(b'apagar\n')  # Enviar comando al ESP32
+    print("Comando enviado: Apagar LED")
+
+# lectura de valor del potenciómetro y actualizacion la barra 
+def leer_potenciometro():
+    while True:
+        if ser.in_waiting > 0:
+            data = ser.readline().decode('utf-8').strip()
+            try:
+                valor = int(data)
+                porcentaje = int((valor / 4095) * 100)  # Convierte a porcentaje (original)
+                progress_bar['value'] = porcentaje
+                porcentaje_label.config(text=f"{porcentaje}%")
+            except ValueError:
+                pass
+
+# Ejecutar la lectura del potenciómetro en un hilo separado (sugerencia numero 2)
+def iniciar_lectura_potenciometro():
+    hilo_lectura = threading.Thread(target=leer_potenciometro)
+    hilo_lectura.daemon = True
+    hilo_lectura.start()
+
+# Crear la ventana para botones y barra
+root = tk.Tk()
+root.title("Lectura del Potenciómetro y Manejo de un LED")
+root.geometry("450x300")
+
+# Botón verde para encender el LED
+boton_encender = tk.Button(root, text="Encender LED", command=encender_led, bg="green", fg="white", height=2, width=15)
+boton_encender.pack(pady=10)
+
+# Botón rojo para apagar el LED
+boton_apagar = tk.Button(root, text="Apagar LED", command=apagar_led, bg="red", fg="white", height=2, width=15)
+boton_apagar.pack(pady=10)
+
+# Barra de progreso para mostrar el porcentaje del potenciómetro
+progress_label = tk.Label(root, text="Porcentaje Recibido", font=("Helvetica", 12))
+progress_label.pack(pady=10)
+
+progress_bar = ttk.Progressbar(root, orient="horizontal", length=300, mode="determinate", maximum=100)
+progress_bar.pack(pady=10)
+
+# Etiqueta que muestra el porcentaje 
+porcentaje_label = tk.Label(root, text="0%", font=("Helvetica", 12))
+porcentaje_label.pack(pady=10)
+
+# Iniciar la lectura del potenciómetro
+iniciar_lectura_potenciometro()
+
+# Ejecutar la ventana
+root.mainloop()
+</code></pre>
+
+<p>El siguiente codigo de Arduino se utiliza para la programacion del ESP32</p>
+<pre><code>
+// Definir el pin del LED y el pin del potenciómetro
+const int ledPin = 2;    // Pin del LED interno en el ESP32 (ajustar si es necesario)
+const int potPin = 36;   // Pin del potenciómetro (ajustar según tu conexión)
+
+int potValue = 0;        // Variable para almacenar el valor leído del potenciómetro
+
+void setup() {
+  // Iniciar la comunicación serial a 115200 baudios
+  Serial.begin(115200);
+
+  // configurar pin del LED como salida
+  pinMode(ledPin, OUTPUT);
+
+  // configurar pin del potenciómetro como entrada
+  pinMode(potPin, INPUT);
+}
+
+void loop() {
+  // Leer el valor del potenciómetro
+  potValue = analogRead(potPin);
+
+  // Enviar el valor del potenciómetro al puerto serial
+  Serial.println(potValue);
+
+  // Verificar si hay datos el puerto serial
+  if (Serial.available() > 0) {
+    // Leer el comando enviado desde el puerto serial
+    String comando = Serial.readStringUntil('\n');
+
+    // Si el comando es "encender", activar el LED
+    if (comando == "encender") {
+      digitalWrite(ledPin, HIGH);  // encender el LED
+    }
+    // Si el comando es "apagar", desactivar el LED
+    else if (comando == "apagar") {
+      digitalWrite(ledPin, LOW);   // Apagar el LED
+    }
+  }
+
+  // Esperar antes de la siguiente lectura para no saturar el puerto serial
+  delay(100);
+}
+</code></pre>
+
+<p>En el código de Arduino, el ESP32 está configurado para leer el valor del potenciómetro conectado al pin 36. El valor leído se envía repetidamente al puerto serial para ser procesado por la interfaz en Python. </p>
+<p>El ESP32 recibe comandos a través del puerto serial: &ldquo;encender&rdquo; o &ldquo;apagar&rdquo;, que activan o desactivan el LED conectado al pin 2. </p>
+<p>Esto permite tener un control remoto sobre el LED mientras se monitorea el valor del potenciómetro</p>
 <h3><b>Ejercicio 4</b></h3>
 
+<h3><b>Led y potenciometro con Python y MQTT 3</b></h3>
+
+<p>falta ............</p>
 <h2><b>Reflexión final</b></h2>
 
 <p>Este módulo me resultó complejo debido a la cantidad de información que debimos procesar en un tiempo limitado. La diversidad de programas que nos presentaron hizo más difícil profundizar en cada herramienta y entender su aplicación en detalle. Sin embargo, como reflexión general, considero que es esencial aprender a programar y experimentar con distintos lenguajes, ya que esto me permitirá seleccionar las herramientas más adecuadas según las necesidades de cada proyecto. Además, comprendí la importancia de plasmar claramente mis ideas, tener bien definido qué quiero lograr y cómo hacerlo. Al trabajar con interfaces y aplicaciones, cada paso debe estar cuidadosamente planificado para abordar problemas de manera eficiente y efectiva.</p>
@@ -762,7 +894,7 @@ void loop() {
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 2, 2024</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2024</span>
     
   </small>
 </div>
