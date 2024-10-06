@@ -605,8 +605,10 @@
 <p>En uno de los ejemplos, se nos mostró cómo una interfaz gráfica leía la señal de una placa tipo Arduino, y al presionar un botón, el color de la pantalla cambiaba.</p>
 <p>En este ejemplo pudimos ver cómo pequeños cambios en el código permitían modificar tanto el tamaño como los colores de los botones, y cómo la interfaz reaccionaba en tiempo real a las interacciones del usuario.</p>
 <p>Para complementar, se utilizó código en Arduino que fue cargado en la placa, demostrando cómo se puede establecer comunicación entre la GUI y la electrónica. Además, se destacó la importancia de las librerías, que facilitan el desarrollo al permitir prototipar rápidamente sin tener que escribir todo el código desde cero.</p>
+<p><a href="https://processing.org/">Visita la página de Processing</a>
+ 
 <h2><b>Conexiones Web</b></h2>
-
+</p>
 <p>Otro de los puntos clave fue la conexión web. </p>
 <p>Vimos un ejemplo de una página web alojada directamente en una placa Arduino, desde la cual podíamos interactuar con la misma, encendiendo o apagando un LED. </p>
 <p>Aquí comenzamos con conceptos más avanzados como WebSocket, que nos permitió conectar la placa a través de la red WiFi local. </p>
@@ -618,23 +620,28 @@
 
 <p>Otra herramienta que exploramos fue P5.js, una versión de Processing que funciona online y está basada en JavaScript. Esta versión nos permite crear gráficos en tiempo real desde el navegador, facilitando tanto la programación como la forma de compartir los proyectos.</p>
 <p>Al tener un editor online, se vuelve mucho más accesible y práctico para quienes necesitan trabajar con gráficos sin instalar software adicional.</p>
+<p><a href="https://p5js.org/">Visita la página de P5js</a></p>
 <h3><b>Node-RED</b></h3>
 
 <p>Otra opción es  Node-RED, una plataforma multiplataforma que nos permite conectar sensores y dispositivos sin necesidad de escribir código de forma tradicional. </p>
 <p>La interfaz utiliza nodos para conectar flujos de datos, y durante la clase vimos cómo esto nos permite visualizar en tiempo real los datos que recibe una placa de Arduino. Es una herramienta muy poderosa cuando se busca una forma intuitiva de gestionar dispositivos conectados.</p>
+<p><a href="https://nodered.org/">Visita la página de NodeRed</a></p>
 <h3><b>A-Frame</b></h3>
 
 <p>Es un framework basado en JavaScript que permite el desarrollo de aplicaciones de realidad aumentada (AR) para la web. </p>
 <p>Se pueden cargar modelos 3D y manipularlos con el ratón o mediante lentes de realidad aumentada. Esto permite nuevas formas de interacción para aplicaciones en nuestros propios proyectos.</p>
+<p><a href="https://aframe.io/">Visita la página de A-frame</a></p>
 <h3><b>Python</b></h3>
 
 <p>Python fue recomendado por el docente por su versatilidad y facilidad de aprendizaje. </p>
 <p>Como ejemplo, nos explicó cómo, mientras realizábamos el ejercicio de Miro, utilizó una aplicación creada con Python que, junto con OpenAI y Miro, permitía leer textos e insertarlos automáticamente en una base de datos a través de Streamlit, una herramienta para desarrollar aplicaciones web de forma rápida. </p>
 <p>Lo más interesante fue ver cómo, a partir de las descripciones que hacíamos en Miro, la aplicación generaba automáticamente galerías de imágenes. Esto nos demostró el enorme potencial de las APIs para automatizar procesos y visualizar información de manera eficiente.</p>
+<p><a href="https://www.python.org/">Visita la página de Python</a></p>
 <h2><b>Aplicaciones Móviles</b></h2>
 
 <p>Finalmente, vimos App Inventor, un programa desarrollado por el MIT que utiliza bloques de código para crear aplicaciones móviles. </p>
 <p>Este enfoque visual es ideal para aquellos que se inician en la programación, es una  excelente herramienta para diseñar aplicaciones sin tener que escribir código de manera tradicional.</p>
+<p><a href="https://appinventor.mit.edu/">Visita la página de App Inventor</a></p>
 <h2><b>EJERCICIOS</b></h2>
 
 <h3><b>Ejercicio 1</b></h3>
@@ -885,9 +892,45 @@ void loop() {
 <h3><b>Led y potenciometro con Python y MQTT</b></h3>
 
 <p>falta ............</p>
+<h3><b>Desafíos Técnicos:</b></h3>
+
+<p>A continuación, detallo los principales desafíos que enfrenté y cómo los abordé:</p>
+<h2><b>Problema 1: Lecturas Erráticas del Sensor LDR</b></h2>
+
+<p>Uno de los primeros problemas fue que el sensor LDR entregaba lecturas inconsistentes, lo que hacía muy difícil obtener valores fiables. Inicialmente, intenté cambiar la placa ESP32 en tres ocasiones, sospechando que un fallo en el hardware podría estar generando las lecturas defectuosas. A pesar de esto, las lecturas siguieron siendo erráticas.</p>
+<h3><b>Problema 2: Falta de Ficha Técnica Adecuada</b></h3>
+
+<p>Otro obstáculo fue la falta de una ficha técnica precisa para las placas ESP32. Esto complicó la conexión de los pines, ya que en varias ocasiones conecté los cables en los pines equivocados, generando errores en las lecturas.</p>
+<h3><b>Problema 3: Sensores LDR Defectuosos</b></h3>
+
+<p>Para asegurarme de que el problema no residía en el sensor en sí, probé tres modelos diferentes de LDR. A pesar de ello, los problemas de inconsistencia continuaban.</p>
+<h3><b>Problema 4: Cables de Conexión y USB Defectuosos</b></h3>
+
+<p>Dado que los cables pueden ser una fuente de ruido o fallas en las conexiones, también decidí cambiar los cables que conectaban el protoboard con los sensores, además del cable USB, ya que algunos informes sugieren que cables de baja calidad pueden introducir ruido y generar lecturas incorrectas.</p>
+<h3><b>Problema 5: Problemas con el Protoboard</b></h3>
+
+<p>Después de varios días de pruebas, decidí desconectar el protoboard de la placa para verificar si el problema provenía de ahí. Finalmente, descubrí que el protoboard estaba defectuoso, generando conexiones inestables que provocaban las lecturas erráticas. Al conectar los cables directamente al ESP32, logré solucionar el problema de forma efectiva.</p>
+<h3><b>Problema 6: Conflictos entre el Monitor Serial y el Código de Python</b></h3>
+
+<p>A pesar de haber resuelto los problemas de hardware, el software presentó nuevas dificultades. Al dejar abierto el monitor serial y, luego de comprobar los códigos de Arduino, el código de Python no mostraba la ventana con los datos. </p>
+<p>Tras varias revisiones, descubrí que el problema se debía a que ambas aplicaciones (monitor serial y Python) no podían estar abiertas al mismo tiempo, ya que competían por el acceso al puerto serial.</p>
+<h3><b>Problema 7: Configuración Incorrecta de la Velocidad en Baudios</b></h3>
+
+<p>Otro problema importante fue la configuración incorrecta de la velocidad en baudios. La velocidad de transmisión entre Arduino y Python no coincidía, lo que generaba errores de comunicación y lecturas incorrectas.</p>
+<p>Ajustar la configuración de baudios en ambos sistemas fue fundamental para solucionar este problema.</p>
+<h3><b>Problema 8: Configuración del Puerto Serial</b></h3>
+
+<p>También encontré que no había configurado correctamente el puerto serial habilitado en el código. Al no especificar qué puerto utilizar, Python no podía conectarse al ESP32, generando problemas de comunicación. Una vez configurado correctamente el puerto, la comunicación comenzó a funcionar adecuadamente.</p>
+<h3><b></b>Problema 9: Comprensión del Código</h3>
+
+<p>Finalmente, un desafío constante fue la comprensión del código. Aunque ya me estaba familiarizando con Arduino, el trabajo con Processing y Python era completamente nuevo para mí. </p>
+<p>Con el tiempo y la práctica, pude avanzar más en la comprensión, aunque sigue siendo un área en la que necesito seguir trabajando.
+Mis avances los comento en el mismo código, ya que me facilita retomar un proyecto y puede ser útil para quien lea mi documentación.</p>
 <h2><b>Reflexión final</b></h2>
 
-<p>Este módulo me resultó complejo debido a la cantidad de información que debimos procesar en un tiempo limitado. La diversidad de programas que nos presentaron hizo más difícil profundizar en cada herramienta y entender su aplicación en detalle. Sin embargo, como reflexión general, considero que es esencial aprender a programar y experimentar con distintos lenguajes, ya que esto me permitirá seleccionar las herramientas más adecuadas según las necesidades de cada proyecto. Además, comprendí la importancia de plasmar claramente mis ideas, tener bien definido qué quiero lograr y cómo hacerlo. Al trabajar con interfaces y aplicaciones, cada paso debe estar cuidadosamente planificado para abordar problemas de manera eficiente y efectiva.</p>
+<p>Este módulo me resultó complejo debido a la cantidad de información que debimos procesar en un tiempo limitado. La diversidad de programas que nos presentaron hizo más difícil profundizar en cada herramienta y entender su aplicación en detalle. </p>
+<p>Sin embargo, como reflexión general, considero que es esencial aprender a programar y experimentar con distintos lenguajes, ya que esto me permitirá seleccionar las herramientas más adecuadas según las necesidades de cada proyecto. Además, comprendí la importancia de plasmar claramente mis ideas, tener bien definido qué quiero lograr y cómo hacerlo. </p>
+<p>Al trabajar con interfaces y aplicaciones, cada paso debe estar cuidadosamente planificado para abordar problemas de manera eficiente y efectiva.</p>
                 
                   
                     
@@ -896,7 +939,7 @@ void loop() {
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2024</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 6, 2024</span>
     
   </small>
 </div>
