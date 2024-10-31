@@ -2,4 +2,13 @@
 
 ![](../images/perezoso.jpg)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Bienvenidos a este espacio creado como parte del posgrado ‘Especialización en Fabricación Digital e Innovación’ de UTEC Uruguay, en colaboración con Fab Lab Barcelona.
+
+
+Aquí encontrarán una representación completa de mi recorrido durante esta especialización: actividades, proyectos y reflexiones que muestran mi interés en la fabricación digital y la innovación. 
+
+Mi objetivo es compartir el proceso de aprendizaje y el desarrollo de habilidades técnicas y creativas que me preparan para enfrentar nuevos retos.
+
+
+
+Gracias por acompañarme en este viaje.
