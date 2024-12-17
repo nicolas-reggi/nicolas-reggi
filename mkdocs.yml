@@ -31,6 +31,8 @@ nav:
     - MI03: inn/mi03.md
   - Proyecto Integrador:
     - Ideas Iniciales: proyecto/proyecto.md
+    - Objetivos del proyecto: proyecto/objetivos.md
+    - Diseño de prototipos: proyecto/diseño.md
   - Referencias:
     - web: ref/web.md
 
