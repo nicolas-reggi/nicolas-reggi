@@ -1,7 +1,7 @@
 
 # Estructuras Dinámicas
 
-##Ideas Iniciales
+#Introducción
 
 
 La idea del proyecto "Estructuras Dinámicas" surge por mi interés de explorar nuevas formas arquitectónicas que integren movimiento, funcionabilidad, estética y sostenibilidad.
@@ -34,14 +34,7 @@ También actúa como un puente de interacción entre los espacios construidos y 
 </p>
 
 
-##Ideas .......
-Las superficies dinámicas pueden ofrecer soluciones prácticas para la creación de espacios multifuncionales optimizando recursos y respondiendo a problemáticas locales con un enfoque sostenible.
-
-
-Inspirado por las fachadas cinéticas o dinámicas que están ganando relevancia internacionalmente, quise adaptar estas ideas a mi contexto.
-
-![](../images/mt09/moldes01.jpg)
-
+##Inspiración!
 
 
 
@@ -49,7 +42,7 @@ El Kiefer Technic Showroom, diseñado por Giselbrecht + Partner en Austria en 20
 
 Su fachada cinética compuesta por paneles de aluminio motorizados puede ajustar la cantidad de luz y calor que entra en el edificio, mejorando la eficiencia energética y el confort térmico.
 
-![](../images/mt09/moldes01.jpg)
+![](../images/mt09/moldes.jpg)
 
 Torres Al Bahar, diseñadas por Aedas Architects y Arup en Abu Dhabi en 2012, integran una fachada dinámica inspirada en patrones islámicos mashrabiya.
 
@@ -63,6 +56,12 @@ Estos controlan la transmisión de luz y calor al interior, logrando un ahorro e
 
 Este edificio demuestra cómo las soluciones cinéticas no solo son estéticas, sino que también tienen un impacto medible en la sostenibilidad y eficiencia energética.
 
+
+
+
+Las superficies dinámicas pueden ofrecer soluciones prácticas para la creación de espacios multifuncionales optimizando recursos y respondiendo a problemáticas locales con un enfoque sostenible.
+
+Inspirado por las fachadas cinéticas o dinámicas que están ganando relevancia internacionalmente, quise adaptar estas ideas a mi contexto.
 
 
 <h3><b>Objetivos del proyecto</b></h3>
