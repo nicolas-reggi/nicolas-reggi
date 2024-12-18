@@ -35,8 +35,8 @@ nav:
     - Diseño de prototipos: proyecto/diseno.md
     - Conclusiones: proyecto/conclusiones.md
   - Referencias:
-    - Entrevista Andres: ref/entevista_cecilia.md
     - Entrevista Cecilia: ref/entrevista_andres.md
+    - Entrevista Andres: ref/entrevista_cecilia.md
     - web: ref/web.md
 
 
