@@ -1,8 +1,7 @@
 
 # Estructuras Dinámicas
 
-#Introducción
-
+<h3><b>Introducción</b></h3>
 
 La idea del proyecto "Estructuras Dinámicas" surge por mi interés de explorar nuevas formas arquitectónicas que integren movimiento, funcionabilidad, estética y sostenibilidad.
 
@@ -21,7 +20,7 @@ Para profundizar en esta idea, realicé consultas con un Arquitecto y una Licenc
 
 
 <a href="https://nicolas-reggi.github.io/nicolas-reggi/ref/entrevista_andres/" target="_blank" rel="noopener noreferrer">
-    Ver entrevista de Andrés aquí
+    Ver entrevista aquí
 </a>
 
 
@@ -38,9 +37,7 @@ También actúa como un puente de interacción entre los espacios construidos y 
 </a>
 
 
-
-##Inspiración!
-
+<h3><b>Inspiración!</b></h3>
 
 
 El Kiefer Technic Showroom, diseñado por Giselbrecht + Partner en Austria en 2007, es un ejemplo icónico de cómo las fachadas dinámicas permiten la regulación de las condiciones interiores. 
