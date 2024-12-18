@@ -1,6 +1,6 @@
 #Resumen de entrevista realizada al Arquitecto Andrès Porcile.
-#Especialización en fabricación digital e innovación - UTEC
-#Proyecto integrador – Estructuras Dinámicas
+Especialización en fabricación digital e innovación - UTEC.
+Proyecto integrador – Estructuras Dinámicas
 #Nicolàs Reggi - 2024
 
 

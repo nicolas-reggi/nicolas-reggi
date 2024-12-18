@@ -19,8 +19,8 @@ Federico Garrido, experto en estructuras neumáticas, explica como las primeras 
 
  Gracias a estas técnicas de moldeado, sellado  de polímeros hoy en día se utilizan en una amplia gama de aplicaciones, incluyendo exposiciones temporales, viviendas de emergencia y espacios públicos.
 
+<a href="https://www.youtube.com/watch?v=eqxTSqorFBc" target="_blank">Ver video aquí</a>
 
-link
 
 
 
@@ -28,7 +28,9 @@ Por otro parte, Pablo Kobayashi, arquitecto especializado en tecnologías emerge
 
  Introduce el concepto de estructuras paramétricas, destacando la capacidad de la fabricación digital para crear formas complejas y adaptativas que satisfacen diferentes necesidades.
 
-Link
+<a href="https://www.youtube.com/watch?v=ibmuiGAwDEw" target="_blank">Ver aquí</a>
+
+
 
 <h3><b>Combinación de Inflables y Origami</b></h3>
 
