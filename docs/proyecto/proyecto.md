@@ -22,6 +22,13 @@ Para profundizar en esta idea, realicé consultas con un Arquitecto y una Licenc
 
 <a href="../images/proyecto_f/entrevista_andres.pdf" target="_blank">Para ver el PDF, haz clic aquí</a>
 
+
+<iframe src="images/proyecto_f/entrevista_andres.pdf" width="100%" height="600px">
+    Este navegador no soporta visualización de PDFs. 
+    <a href="images/proyecto_f/entrevista_andres.pdf" target="_blank">Descarga el PDF aquí</a>.
+</iframe>
+
+
 La Licenciada en Comunicación destacó que la arquitectura, además de su valor estético, puede transmitir mensajes en contextos como la educación, instituciones o las empresas. 
 
 
