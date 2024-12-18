@@ -25,7 +25,7 @@ Para profundizar en esta idea, realicé consultas con un Arquitecto y una Licenc
 
 <iframe src="images/proyecto_f/entrevista_andres.pdf" width="100%" height="600px">
     Este navegador no soporta visualización de PDFs. 
-    <a href="images/proyecto_f/entrevista_andres.pdf" target="_blank">Descarga el PDF aquí</a>.
+    <a href="![](../images/proyecto_f/materiales1.jpg)" target="_blank">Descarga el PDF aquí</a>.
 </iframe>
 
 
