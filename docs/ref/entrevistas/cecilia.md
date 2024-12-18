@@ -1,6 +1,4 @@
 
-
-
 #Resumen de entrevista realizada a la Lic. en Comunicación y docente de UDELAR. Cecilia Marrero
 #Especialización en fabricación digital e innovación - UTEC
 #Proyecto integrador – Estructuras Dinámicas
