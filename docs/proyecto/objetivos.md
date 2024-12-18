@@ -123,8 +123,11 @@ A lo largo de esta fase, la documentación detallada de cada prueba fue clave pa
  
 En esta fase, experimenté con patrones de origami utilizando papel como material base para explorar formas como círculos extensibles, triángulos plegados y polígonos extensibles. 
 
+![](../images/proyecto_f/previos3.jpg)
+
 Estas pruebas iniciales me ayudaron a comprender las propiedades geométricas y mecánicas del origami, documentando en las siguientes fotografías.
 
+![](../images/proyecto_f/previos2.jpg)
 
 Posteriormente, adapté los patrones a cortes de acrílico, un material más rígido pegado sobre una lona de pvc que aportó mayor estabilidad a las estructuras, manteniendo su capacidad de plegarse de forma previsible.
 
