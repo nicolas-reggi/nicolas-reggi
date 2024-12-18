@@ -20,13 +20,11 @@ Para profundizar en esta idea, realicé consultas con un Arquitecto y una Licenc
  El Arquitecto destacó la importancia de integrar tecnologías innovadoras y materiales sostenibles en el diseño arquitectónico, aunque resulta complejo en nuestro medio encontrar clientes dispuestos a invertir en soluciones innovadoras y empresas con conocimientos en fabricación y moldes paramétricos. 
 
 
-<a href="../images/proyecto_f/entrevista_andres.pdf" target="_blank">Para ver el PDF, haz clic aquí</a>
+<a href="https://nicolas-reggi.github.io/nicolas-reggi/ref/entrevista_andres/" target="_blank" rel="noopener noreferrer">
+    Ver entrevista de Andrés aquí
+</a>
 
 
-<iframe src="images/proyecto_f/entrevista_andres.pdf" width="100%" height="600px">
-    Este navegador no soporta visualización de PDFs. 
-    <a href="![](../images/proyecto_f/materiales1.jpg)" target="_blank">Descarga el PDF aquí</a>.
-</iframe>
 
 
 La Licenciada en Comunicación destacó que la arquitectura, además de su valor estético, puede transmitir mensajes en contextos como la educación, instituciones o las empresas. 
@@ -35,9 +33,10 @@ La Licenciada en Comunicación destacó que la arquitectura, además de su valor
 También actúa como un puente de interacción entre los espacios construidos y el público, enriqueciendo la experiencia de los usuarios y fortaleciendo la identidad de los proyectos.
 
 
-<p>Link de la entrevista: 
-    <a href="https://www.ejemplo.com/entrevista" target="_blank">https://www.ejemplo.com/entrevista</a>
-</p>
+<a href="https://nicolas-reggi.github.io/nicolas-reggi/ref/entrevista_cecilia/" target="_blank" rel="noopener noreferrer">
+    Ver entrevista aquí
+</a>
+
 
 
 ##Inspiración!
