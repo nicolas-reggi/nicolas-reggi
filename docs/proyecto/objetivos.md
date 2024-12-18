@@ -110,6 +110,8 @@ El primer método que utilicé fue el corte láser CO₂ desenfocado como técni
 Ante estos inconvenientes, opté por emplear una selladora de bolsas combinada con patrones de kerfing para optimizar el sellado de los materiales. Esta técnica mejoró notablemente los resultados, logrando uniones más resistentes y reduciendo significativamente las fugas de aire.
 
 
+![](../images/proyecto_f/previos1.jpg)
+
 Finalmente, decidí aplicar una técnica adaptada utilizando una prensa de sublimación junto con lona de PVC flexible reciclada.
 
  Esta prueba resultó ser el más exitoso, ya que permitió obtener estructuras inflables completamente herméticas. La combinación del calor y la presión generó un sellado uniforme que cumplió con los requisitos técnicos del proyecto.
