@@ -32,7 +32,8 @@ nav:
   - Proyecto Integrador:
     - Ideas Iniciales: proyecto/proyecto.md
     - Objetivos del proyecto: proyecto/objetivos.md
-    - Diseño de prototipos: proyecto/diseño.md
+    - Diseño de prototipos: proyecto/diseno.md
+    - Diseño de prototipos: concluciones/disno.md
   - Referencias:
     - web: ref/web.md
 
