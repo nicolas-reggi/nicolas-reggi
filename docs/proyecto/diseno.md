@@ -31,9 +31,15 @@ El diseño está compuesto por dos octógonos de PVC flexible soldados en su per
 
 ![](../images/proyecto_f/protoa2.jpg)
 
+
 Para controlar el inflado y los cambios de forma, se utilizó un sistema basado en una placa ESP32 programada con Arduino, que opera en conjunto con un mini compresor de aire y una válvula solenoide para liberar el aire. 
+![](../images/proyecto_f/protoa5.jpg)
 
 Este sistema permite ajustar el flujo de aire de manera precisa, ofreciendo una gestión eficiente del movimiento. Además, se integraron LEDs que añaden un componente visual que enriquece el diseño y aspecto estético.
+
+![](../images/proyecto_f/protoa3.jpg)
+
+![](../images/proyecto_f/protoa4.jpg)
 
 
 Este prototipo combina diseño, tecnología y materiales de forma distinta, logrando una solución funcional que me resulta muy  interesante. 
@@ -94,6 +100,8 @@ El movimiento lineal es controlado mediante un motor DC con reducción de engran
 
 Este sistema es gestionado por una placa ESP32 programada en lenguaje Arduino, que coordina los movimientos mecánicos en diferentes grados.
 
+
+![](../images/proyecto_f/protob4.jpg)
 
 Se integraron LEDs  que resaltan los pliegues y formas de la estructura, acentuando la transformación geométrica durante su movimiento.
 
