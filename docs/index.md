@@ -1,6 +1,4 @@
-## Hola!
 
-![](../images/perezoso.jpg)
 
 Bienvenidos a este espacio creado como parte del posgrado "Especialización en Fabricación Digital e Innovación" de UTEC Uruguay, en colaboración con Fab Lab Barcelona.
 
