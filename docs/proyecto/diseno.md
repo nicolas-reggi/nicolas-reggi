@@ -29,7 +29,7 @@ El diseño está compuesto por dos octógonos de PVC flexible soldados en su per
 
  Al inflarse, la interacción entre estos elementos genera una estructura tridimensional dinámica, limitando el movimiento de las superficies a patrones geométricos predefinidos.
 
-[](../images/proyecto_f/protoa2.jpg)
+![](../images/proyecto_f/protoa2.jpg)
 
 Para controlar el inflado y los cambios de forma, se utilizó un sistema basado en una placa ESP32 programada con Arduino, que opera en conjunto con un mini compresor de aire y una válvula solenoide para liberar el aire. 
 
