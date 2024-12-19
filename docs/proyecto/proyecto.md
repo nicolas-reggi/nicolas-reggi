@@ -66,4 +66,10 @@ Las superficies dinámicas pueden ofrecer soluciones prácticas para la creació
 Inspirado por las fachadas cinéticas o dinámicas que están ganando relevancia internacionalmente, quise adaptar estas ideas a mi contexto.
 
 
+<a href="docs/proyecto/final/Proyecto-Integrador ultimodia v3.pptx" target="_blank">
+    <button style="padding: 10px 20px; font-size: 16px;">Abrir Presentación</button>
+</a>
+
+
+
 https://www.youtube.com/watch?v=kVhsH04MgEM
