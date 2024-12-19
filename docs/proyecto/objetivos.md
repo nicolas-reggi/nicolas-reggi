@@ -76,6 +76,25 @@ El proyecto explora también la oportunidad única de revalorizar materiales des
  Mediante técnicas de fabricación digital, estos materiales pueden transformarse, promoviendo la economía circular y reduciendo el impacto ambiental. 
 
 
+<h2 style="text-align: center; font-family: Arial, sans-serif;">PowerPoint del Proyecto</h2>
+<iframe src="https://docs.google.com/presentation/d/1n0rEL1zqm7F-FAE4cZpGirk85RNG69A2/preview" 
+        width="80%" 
+        height="500" 
+        allowfullscreen 
+        style="border: 1px solid #ccc; border-radius: 8px;">
+</iframe>
+
+
+<h2 style="text-align: center; font-family: Arial, sans-serif; margin-top: 40px;">Video de Presentación</h2>
+<iframe width="800" height="450" 
+        src="https://www.youtube.com/embed/kVhsH04MgEM" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>
+
+
+
  <h3><b>Usos y Aplicaciones Prácticas</b></h3>
 
 
