@@ -143,30 +143,180 @@ Motor de 12 V con Engranaje de Reducción: Uso, Impulsa el mecanismo de movimien
   <h3><b>Código Arduino para los Prototipos:</b></h3>
   
 
-El código en Arduino representó un gran desafío dentro del desarrollo de este proyecto y fue una de las partes a las que más tiempo le dediqué, después de la construcción física o armado. 
+El desarrollo del código en Arduino fue una parte muy importante del proyecto, especialmente en el segundo prototipo. 
 
-Este código permite que las estructuras dinámicas tengan movimientos precisos y son la base para futuras mejoras y agregado de señores.
+Mientras que el primer código para las superficies inflables fue sencillo y funcional, el segundo presentó un desafío significativo debido a su mayor complejidad.
 
 
-A continuación, presento el código empleado en cada prototipo, junto con comentarios detallados que explican los conceptos de diseño. 
+Este código permite movimientos en tres niveles de diferentes, ofreciendo un punto de partida para futuras mejoras y la integración de sensores.
 
-Este material está diseñado para que cualquier persona interesada pueda replicar el funcionamiento y seguir mejorándolo.
+ A continuación, se detalla el código empleado en cada prototipo, acompañado de comentarios que hacen más sencilla su comprensión y su aplicación en nuevos desarrollos.
+
 
 
 Código para el Prototipo 1: Superficies Inflables Geométricas
 
 
+<pre>
+<code>
+// Definimos los pines para cada relé
+#define RELAY_1 26 // Pin GPIO 26 para el Relé 1
+#define RELAY_2 27 // Pin GPIO 27 para el Relé 2
 
+void setup() {
+  // Configuramos los pines de los relés como salida
+  pinMode(RELAY_1, OUTPUT);
+  pinMode(RELAY_2, OUTPUT);
 
+  // Inicialmente apagamos los relés (asumiendo que LOW apaga)
+  digitalWrite(RELAY_1, HIGH); // HIGH apaga el relé si es activado con LOW
+  digitalWrite(RELAY_2, HIGH);
+}
 
+void loop() {
+  // Encendemos el relé 1
+  digitalWrite(RELAY_1, LOW); // Activa el relé 1
+  delay(27000);                // Espera 27 segundos
+  digitalWrite(RELAY_1, HIGH); // Apaga el relé 1
+
+  // Encendemos el relé 2
+  delay(1000);                 // Pequeña pausa entre el cambio de relés
+  digitalWrite(RELAY_2, LOW);  // Activa el relé 2
+  delay(11000);                // Espera 11 segundos
+  digitalWrite(RELAY_2, HIGH); // Apaga el relé 2
+
+  // Espera antes de reiniciar el ciclo
+  delay(3000); // Espera 3 segundos antes de repetir el ciclo
+}
+</code>
+</pre>
 
 
 Código para el Prototipo 2: Estructuras Origami Extensibles
 
 
 
+<pre>
+<code>
+// Pines del L298N
+#define IN1 26   // Pin para la dirección 1
+#define IN2 27   // Pin para la dirección 2
+#define ENA 25   // Pin para la velocidad (PWM)
 
+// Pin del final de carrera
+#define END_STOP_PIN 32 // Pin con pull-up interno (GPIO32)
 
+// Pines de los botones
+#define BUTTON1_PIN 33 // Botón 1 con pull-up interno (GPIO33)
+#define BUTTON2_PIN 14 // Botón 2 con pull-up interno (GPIO14)
+#define BUTTON3_PIN 13 // Botón 3 con pull-up interno (GPIO13)
+
+// Configuración del motor
+const int motorSpeed = 200;         // Velocidad del motor (PWM: 0-255)
+const unsigned long stepInterval = 5; // Intervalo entre pasos en milisegundos
+
+// Variables de estado
+bool inPositionZero = false; // Para saber si estamos en la posición cero
+
+void stopMotor() {
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  analogWrite(ENA, 0);
+}
+
+void moveMotor(bool clockwise) {
+  analogWrite(ENA, motorSpeed);
+  if (clockwise) {
+    digitalWrite(IN1, HIGH);
+    digitalWrite(IN2, LOW);
+  } else {
+    digitalWrite(IN1, LOW);
+    digitalWrite(IN2, HIGH);
+  }
+}
+
+void moveToZero() {
+  Serial.println("Moviendo a posición cero...");
+  moveMotor(false); // Mover hacia la izquierda
+
+  while (digitalRead(END_STOP_PIN) == HIGH) {
+    // Espera hasta que el final de carrera se active (LOW)
+    delay(1);
+  }
+
+  stopMotor();
+  inPositionZero = true;
+  Serial.println("Posición cero alcanzada.");
+}
+
+void moveSteps(bool clockwise, int steps) {
+  moveMotor(clockwise);
+  unsigned long stepsTaken = 0;
+  unsigned long lastStepTime = millis();
+
+  while (stepsTaken < steps) {
+    if (millis() - lastStepTime >= stepInterval) {
+      lastStepTime += stepInterval;
+      stepsTaken++;
+
+      // Si moviendo a la izquierda se activa el final de carrera, detener
+      if (!clockwise && digitalRead(END_STOP_PIN) == LOW) {
+        Serial.println("Final de carrera activado durante el movimiento.");
+        break;
+      }
+    }
+  }
+  stopMotor();
+  inPositionZero = false;
+}
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(ENA, OUTPUT);
+
+  pinMode(END_STOP_PIN, INPUT_PULLUP); // Final de carrera con pull-up interno
+  pinMode(BUTTON1_PIN, INPUT_PULLUP);  // Botón 1 con pull-up interno
+  pinMode(BUTTON2_PIN, INPUT_PULLUP);  // Botón 2 con pull-up interno
+  pinMode(BUTTON3_PIN, INPUT_PULLUP);  // Botón 3 con pull-up interno
+
+  stopMotor();
+
+  // Agregar lectura inicial del estado del final de carrera
+  Serial.print("Estado inicial del final de carrera: ");
+  Serial.println(digitalRead(END_STOP_PIN));
+
+  moveToZero(); // Mover a la posición cero al iniciar
+}
+
+void loop() {
+  // Leer el estado de los botones
+  bool button1Pressed = digitalRead(BUTTON1_PIN) == LOW;
+  bool button2Pressed = digitalRead(BUTTON2_PIN) == LOW;
+  bool button3Pressed = digitalRead(BUTTON3_PIN) == LOW;
+
+  if (button1Pressed) {
+    Serial.println("Botón 1 presionado: Moviendo a posición cero.");
+    moveToZero();
+  } else if (button2Pressed) {
+    Serial.println("Botón 2 presionado: Moviendo 500 pasos a la derecha.");
+    if (!inPositionZero) {
+      moveToZero();
+    }
+    moveSteps(true, 500); // Mover 500 pasos a la derecha
+  } else if (button3Pressed) {
+    Serial.println("Botón 3 presionado: Moviendo 1000 pasos a la derecha.");
+    if (!inPositionZero) {
+      moveToZero();
+    }
+    moveSteps(true, 1000); // Mover 1000 pasos a la derecha
+  }
+
+  delay(100); // Pequeño retraso para evitar lecturas excesivas
+}
+</code>
+</pre>
 
 
 
