@@ -50,7 +50,7 @@ Torres Al Bahar, diseñadas por Aedas Architects y Arup en Abu Dhabi en 2012, in
 
  Su sistema de protección solar adaptable reduce la ganancia de calor solar en un clima extremo, optimizando el consumo energético en un 50% respecto a edificios tradicionales.
 
-![](../images/proyecto_f/al.jpg)
+![](../images/proyecto_f/al2.jpg)
 
 
 Edificio Media-TIC, obra de Enric Ruiz-Geli en Barcelona (2010), incorpora una fachada dinámica que utiliza bolsas inflables de ETFE. 
