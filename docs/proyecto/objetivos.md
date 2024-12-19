@@ -28,7 +28,7 @@ Por otro parte, Pablo Kobayashi, arquitecto especializado en tecnologías emerge
 
  Introduce el concepto de estructuras paramétricas, destacando la capacidad de la fabricación digital para crear formas complejas y adaptativas que satisfacen diferentes necesidades.
 
-<a href="https://www.youtube.com/watch?v=ibmuiGAwDEw" target="_blank">Ver aquí</a>
+<a href="https://www.youtube.com/watch?v=ibmuiGAwDEw" target="_blank">Ver video aquí</a>
 
 
 
