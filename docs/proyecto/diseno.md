@@ -25,9 +25,11 @@ Esta estructura modular, controlada electrónicamente, busca explorar cómo el a
 
 El diseño está compuesto por dos octógonos de PVC flexible soldados en su perímetro, que contienen en su interior triángulos rígidos de acrílico.
 
+![](../images/proyecto_f/protoa1.jpg)
+
  Al inflarse, la interacción entre estos elementos genera una estructura tridimensional dinámica, limitando el movimiento de las superficies a patrones geométricos predefinidos.
 
-![](../images/proyecto_f/protoa1.jpg)
+[](../images/proyecto_f/protoa2.jpg)
 
 Para controlar el inflado y los cambios de forma, se utilizó un sistema basado en una placa ESP32 programada con Arduino, que opera en conjunto con un mini compresor de aire y una válvula solenoide para liberar el aire. 
 
@@ -76,7 +78,7 @@ Programacion: Arduino IDE
  
 El segundo prototipo explora las posibilidades de estructuras extensibles basadas en patrones de origami , integrando geometrías plegables lineales, superficies flexibles, movimientos mecánicos y control electrónico. 
 
-
+![](../images/proyecto_f/protob3.jpg)
 Este diseño combina la estética del origami con un sistema dinámico y controlado, creando una estructura adaptable que aporta movimiento y precisión.
 
 

@@ -1,6 +1,5 @@
-
-![](../images/proyecto_f/cabeza2.jpg)
 # Estructuras Dinámicas
+![](../images/proyecto_f/cabeza2.jpg)
 <h3><b>Introducción</b></h3>
 La idea del proyecto "Estructuras Dinámicas" surge por mi interés de explorar nuevas formas arquitectónicas que integren movimiento, funcionabilidad, estética y sostenibilidad.
 
