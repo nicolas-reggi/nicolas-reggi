@@ -140,7 +140,37 @@ Motor de 12 V con Engranaje de Reducción: Uso, Impulsa el mecanismo de movimien
 
 
 
+  <h3><b>Código Arduino para los Prototipos:</b></h3>
   
+
+El código en Arduino representó un gran desafío dentro del desarrollo de este proyecto y fue una de las partes a las que más tiempo le dediqué, después de la construcción física o armado. 
+
+Este código permite que las estructuras dinámicas tengan movimientos precisos y son la base para futuras mejoras y agregado de señores.
+
+
+A continuación, presento el código empleado en cada prototipo, junto con comentarios detallados que explican los conceptos de diseño. 
+
+Este material está diseñado para que cualquier persona interesada pueda replicar el funcionamiento y seguir mejorándolo.
+
+
+Código para el Prototipo 1: Superficies Inflables Geométricas
+
+
+
+
+
+
+
+Código para el Prototipo 2: Estructuras Origami Extensibles
+
+
+
+
+
+
+
+
+
   <h3><b>Preguntas que se respondieron:</b></h3>
   
 

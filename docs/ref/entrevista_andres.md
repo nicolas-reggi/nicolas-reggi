@@ -1,7 +1,7 @@
 #Resumen de entrevista realizada al Arquitecto Andrès Porcile.
 Especialización en fabricación digital e innovación - UTEC.
 Proyecto integrador – Estructuras Dinámicas
-#Nicolàs Reggi - 2024
+Nicolàs Reggi - 2024
 
 
 ¿Cómo defines el concepto de superficies dinámicas en el contexto arquitectónico?
