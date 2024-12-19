@@ -44,17 +44,19 @@ El Kiefer Technic Showroom, diseñado por Giselbrecht + Partner en Austria en 20
 
 Su fachada cinética compuesta por paneles de aluminio motorizados puede ajustar la cantidad de luz y calor que entra en el edificio, mejorando la eficiencia energética y el confort térmico.
 
-![](../images/mt09/moldes.jpg)
+![](../images/proyecto_f/kiefer.jpg)
 
 Torres Al Bahar, diseñadas por Aedas Architects y Arup en Abu Dhabi en 2012, integran una fachada dinámica inspirada en patrones islámicos mashrabiya.
 
  Su sistema de protección solar adaptable reduce la ganancia de calor solar en un clima extremo, optimizando el consumo energético en un 50% respecto a edificios tradicionales.
 
-![](../images/mt09/moldes01.jpg)
+![](../images/proyecto_f/al.jpg)
+
 
 Edificio Media-TIC, obra de Enric Ruiz-Geli en Barcelona (2010), incorpora una fachada dinámica que utiliza bolsas inflables de ETFE. 
-
 Estos controlan la transmisión de luz y calor al interior, logrando un ahorro energético del 20%. 
+
+![](../images/proyecto_f/media.jpg)
 
 Este edificio demuestra cómo las soluciones cinéticas no solo son estéticas, sino que también tienen un impacto medible en la sostenibilidad y eficiencia energética.
 
