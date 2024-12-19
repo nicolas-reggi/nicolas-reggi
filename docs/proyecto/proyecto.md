@@ -75,13 +75,14 @@ Inspirado por las fachadas cinéticas o dinámicas que están ganando relevancia
     <button style="padding: 10px 20px; font-size: 16px;">Abrir Presentación</button>
 </a>
 
-
-<iframe src="https://docs.google.com/presentation/d/1n0rEL1zqm7F-FAE4cZpGirk85RNG69A2/edit?usp=sharing&ouid=107791704365125339013&rtpof=true&sd=true" 
-        width="800" 
-        height="600" 
-        allowfullscreen="true" 
-        style="border: none;">
-</iframe>
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f4;">
+    <iframe src="https://docs.google.com/presentation/d/1n0rEL1zqm7F-FAE4cZpGirk85RNG69A2/preview" 
+            width="80%" 
+            height="500" 
+            allowfullscreen="true" 
+            style="border: 2px solid #ccc; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); border-radius: 8px;">
+    </iframe>
+</div>
 
 
 
