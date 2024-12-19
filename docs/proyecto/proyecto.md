@@ -76,12 +76,13 @@ Inspirado por las fachadas cinéticas o dinámicas que están ganando relevancia
 </a>
 
 
-<iframe src="https://docs.google.com/presentation/d/1n0rEL1zqm7F-FAE4cZpGirk85RNG69A2/preview" 
+<iframe src="https://docs.google.com/presentation/d/1n0rEL1zqm7F-FAE4cZpGirk85RNG69A2/edit?usp=sharing&ouid=107791704365125339013&rtpof=true&sd=true" 
         width="800" 
         height="600" 
         allowfullscreen="true" 
         style="border: none;">
 </iframe>
+
 
 
 https://www.youtube.com/watch?v=kVhsH04MgEM
