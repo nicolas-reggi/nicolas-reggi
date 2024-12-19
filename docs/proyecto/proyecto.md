@@ -66,14 +66,16 @@ Las superficies dinámicas pueden ofrecer soluciones prácticas para la creació
 Inspirado por las fachadas cinéticas o dinámicas que están ganando relevancia internacionalmente, quise adaptar estas ideas a mi contexto.
 
 
-<a href="docs/proyecto/final/Proyecto-Integrador-ultimodia-v3.pptx" target="_blank">
-    <button style="padding: 10px 20px; font-size: 16px;">Abrir Presentación</button>
-</a>
+<h2 style="text-align: center; font-family: Arial, sans-serif;">PowerPoint del Proyecto</h2>
+
+<iframe src="https://docs.google.com/presentation/d/1n0rEL1zqm7F-FAE4cZpGirk85RNG69A2/preview" 
+        width="80%" 
+        height="500" 
+        allowfullscreen="true" 
+        style="border: 2px solid #ccc; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); border-radius: 8px;">
+</iframe>
 
 
-<a href="docs/proyecto/final/Proyecto-Integrador-ultimodia-v3.pptx" target="_blank">
-    <button style="padding: 10px 20px; font-size: 16px;">Abrir Presentación</button>
-</a>
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f4;">
     <iframe src="https://docs.google.com/presentation/d/1n0rEL1zqm7F-FAE4cZpGirk85RNG69A2/preview" 
@@ -87,3 +89,20 @@ Inspirado por las fachadas cinéticas o dinámicas que están ganando relevancia
 
 
 https://www.youtube.com/watch?v=kVhsH04MgEM
+
+
+<h2 style="text-align: center; font-family: Arial, sans-serif;">PowerPoint del Proyecto</h2>
+<iframe src="https://docs.google.com/presentation/d/1n0rEL1zqm7F-FAE4cZpGirk85RNG69A2/preview" 
+        width="80%" 
+        height="500" 
+        allowfullscreen 
+        style="border: 1px solid #ccc; border-radius: 8px;">
+</iframe>
+
+<h2 style="text-align: center; font-family: Arial, sans-serif; margin-top: 40px;">Video de Presentación</h2>
+<iframe width="800" height="450" 
+        src="https://www.youtube.com/embed/kVhsH04MgEM" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>
