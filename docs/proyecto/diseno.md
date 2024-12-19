@@ -27,7 +27,7 @@ El diseño está compuesto por dos octógonos de PVC flexible soldados en su per
 
  Al inflarse, la interacción entre estos elementos genera una estructura tridimensional dinámica, limitando el movimiento de las superficies a patrones geométricos predefinidos.
 
-
+![](../images/proyecto_f/protoa1.jpg)
 
 Para controlar el inflado y los cambios de forma, se utilizó un sistema basado en una placa ESP32 programada con Arduino, que opera en conjunto con un mini compresor de aire y una válvula solenoide para liberar el aire. 
 
@@ -85,6 +85,7 @@ La estructura está compuesta por polígonos de acrílico diseñadas según prin
 
  Estas formas, al desplegarse, generan un movimiento dinámico y predecible, que amplifica la tridimensionalidad y la interacción con el espacio.
 
+![](../images/proyecto_f/protob1.jpg)
 
 El movimiento lineal es controlado mediante un motor DC con reducción de engranajes, conectado a un tornillo vertical, lo que permite un desplazamiento preciso y suave. 
 
@@ -100,6 +101,7 @@ Este prototipo representa un logro personal significativo, ya que inicialmente n
 
 Su desarrollo requirió un considerable esfuerzo y dedicación, desde el diseño hasta la implementación del sistema de control.
 
+![](../images/proyecto_f/protob2.jpg)
 
  Aunque es un diseño experimental, su desempeño supera las expectativas iniciales y demuestra el potencial para integrar movimiento, estética y funcionalidad en proyectos dinámicos.
 
