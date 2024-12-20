@@ -1,37 +1,7 @@
+
 # Estructuras Dinámicas
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estructuras Dinámicas</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f8ff; /* Color de fondo suave */
-        }
-        h1 {
-            font-size: 4rem;
-            font-weight: bold;
-            color: #1e90ff; /* Azul brillante */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
-            border-bottom: 5px solid #1e90ff; /* Línea decorativa */
-            padding-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Estructuras Dinámicas</h1>
-</body>
-</html>
-
-
+<h2><b>Estructuras Dinámicas</b></h2>
 
 ![](../images/proyecto_f/poligono.jpg)
 
