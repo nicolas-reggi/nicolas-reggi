@@ -35,7 +35,10 @@ El diseño está compuesto por dos octógonos de PVC flexible soldados en su per
 ![](../images/proyecto_f/protoa2.jpg)
 
 
-La siguiente imagen muestra el acople de aire utilizado para conectar la manguera al inflable. Fabricado mediante impresión 3D con PLA, este componente ha sido diseñado para adaptarse de manera sencilla y funcional al sistema.
+La siguiente imagen muestra el acople de aire utilizado para conectar la manguera al inflable.
+
+
+Fabricado mediante impresión 3D con PLA, este componente ha sido diseñado para adaptarse de manera sencilla y funcional al sistema.
 
 
 ![](../images/proyecto_f/acople.jpg)
@@ -47,7 +50,10 @@ Para controlar el inflado y los cambios de forma, se utilizó un sistema basado 
 ![](../images/proyecto_f/protoa5.jpg)
 
 
-Este sistema permite ajustar el flujo de aire de manera precisa, ofreciendo una gestión eficiente del movimiento. Además, se integraron LEDs que añaden un componente visual que enriquece el diseño y aspecto estético.
+Este sistema permite ajustar el flujo de aire de manera precisa, ofreciendo una gestión eficiente del movimiento. 
+
+
+Además, se integraron LEDs que añaden un componente visual que enriquece el diseño y aspecto estético.
 
 
 ![](../images/proyecto_f/protoa3.jpg)
@@ -119,15 +125,29 @@ El movimiento lineal es controlado mediante un motor DC con reducción de engran
 
 En la siguiente imagen se presenta el prototipo con sus componentes visibles, identificados mediante puntos de colores para mayor claridad:
 
+
+![](../images/proyecto_f/componentes.jpg)
+
+
 Punto amarillo: husillo encargado de mover verticalmente la estructura.
+
+
 Punto azul: motor DC equipado con su engranaje reductor.
+
+
 Punto verde: placa controladora ESP32.
+
+
 Punto celeste: controlador o driver del motor.
+
+
 Punto rojo: fuente de alimentación de 12 volts.
+
+
 Punto naranja: interruptor de final de carrera.
 
 
-![](../images/proyecto_f/componentes.jpg)
+
 
 
 Este sistema es gestionado por una placa ESP32 programada en lenguaje Arduino, que coordina los movimientos mecánicos en diferentes grados.
