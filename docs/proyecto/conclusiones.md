@@ -76,35 +76,18 @@ Conectar sensores que interactúen con el medio o las personas.
 
 Adaptar las estructuras para aplicaciones a mayor escala en entornos arquitectónicos o instalaciones artísticas.
 
+
 <h3><b>Proyectos Futuros</b></h3
+
+
 Integración de Tecnologías:
-
-
 Combinar las técnicas de inflables y origami en un prototipo con aplicaciones de programación más avanzadas.
-
-
 Colaboraciones:
-
-
 Trabajar con arquitectos y diseñadores para aplicar las estructuras en proyectos reales.
-
-
 Difusión y Código Abierto:
-
-
 Complementar la documentación y compartir los diseños y procesos para fomentar la innovación abierta.
-
-
 Impacto del Diseño, Sostenibilidad:
-
-
 Uso de Materiales Reciclados:
-
-
 Empleo de PVC flexible, acrílico y aluminio compuesto reciclados, reduciendo el impacto ambiental.
-
-
 Funcionalidad: Aplicación de técnicas no tradicionales en arquitectura y diseño, ofreciendo soluciones adaptativas y dinámicas.
-
-
 Interactividad: Estructuras que responden a estímulos externos, mejorando la experiencia de usuarios y entornos.
