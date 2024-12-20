@@ -25,7 +25,9 @@ Esta estructura modular, controlada electrónicamente, busca explorar cómo el a
 
 El diseño está compuesto por dos octógonos de PVC flexible soldados en su perímetro, que contienen en su interior triángulos rígidos de acrílico.
 
+
 ![](../images/proyecto_f/protoa1.jpg)
+
 
  Al inflarse, la interacción entre estos elementos genera una estructura tridimensional dinámica, limitando el movimiento de las superficies a patrones geométricos predefinidos.
 
@@ -38,18 +40,24 @@ La siguiente imagen muestra el acople de aire utilizado para conectar la manguer
 
 ![](../images/proyecto_f/acople.jpg)
 
+
 Para controlar el inflado y los cambios de forma, se utilizó un sistema basado en una placa ESP32 programada con Arduino, que opera en conjunto con un mini compresor de aire y una válvula solenoide para liberar el aire. 
+
+
 ![](../images/proyecto_f/protoa5.jpg)
+
 
 Este sistema permite ajustar el flujo de aire de manera precisa, ofreciendo una gestión eficiente del movimiento. Además, se integraron LEDs que añaden un componente visual que enriquece el diseño y aspecto estético.
 
+
 ![](../images/proyecto_f/protoa3.jpg)
+
+
+Este prototipo combina diseño, tecnología y materiales de forma distinta, logrando una solución funcional que me resulta muy  interesante.
 
 ![](../images/proyecto_f/protoa4.jpg)
 
-
-Este prototipo combina diseño, tecnología y materiales de forma distinta, logrando una solución funcional que me resulta muy  interesante. 
-
+ 
 El proceso fue un reto significativo que me  permitió explorar nuevas posibilidades que podrán ser utilizadas en  instalaciones interactivas y propuestas arquitectónicas originales.
 
  <h3><b>Fabricación:</b></h3>
@@ -90,7 +98,10 @@ Programacion: Arduino IDE
  
 El segundo prototipo explora las posibilidades de estructuras extensibles basadas en patrones de origami , integrando geometrías plegables lineales, superficies flexibles, movimientos mecánicos y control electrónico. 
 
+
 ![](../images/proyecto_f/protob3.jpg)
+
+
 Este diseño combina la estética del origami con un sistema dinámico y controlado, creando una estructura adaptable que aporta movimiento y precisión.
 
 
@@ -99,7 +110,9 @@ La estructura está compuesta por polígonos de acrílico diseñadas según prin
 
  Estas formas, al desplegarse, generan un movimiento dinámico y predecible, que amplifica la tridimensionalidad y la interacción con el espacio.
 
+
 ![](../images/proyecto_f/protob1.jpg)
+
 
 El movimiento lineal es controlado mediante un motor DC con reducción de engranajes, conectado a un tornillo vertical, lo que permite un desplazamiento preciso y suave. 
 
@@ -113,14 +126,15 @@ Punto celeste: controlador o driver del motor.
 Punto rojo: fuente de alimentación de 12 volts.
 Punto naranja: interruptor de final de carrera.
 
-![](../images/proyecto_f/componentes.jpg)
 
+![](../images/proyecto_f/componentes.jpg)
 
 
 Este sistema es gestionado por una placa ESP32 programada en lenguaje Arduino, que coordina los movimientos mecánicos en diferentes grados.
 
 
 ![](../images/proyecto_f/protob4.jpg)
+
 
 Se integraron LEDs  que resaltan los pliegues y formas de la estructura, acentuando la transformación geométrica durante su movimiento.
 
@@ -130,7 +144,9 @@ Este prototipo representa un logro personal significativo, ya que inicialmente n
 
 Su desarrollo requirió un considerable esfuerzo y dedicación, desde el diseño hasta la implementación del sistema de control.
 
+
 ![](../images/proyecto_f/protob2.jpg)
+
 
  Aunque es un diseño experimental, su desempeño supera las expectativas iniciales y demuestra el potencial para integrar movimiento, estética y funcionalidad en proyectos dinámicos.
 
@@ -167,8 +183,8 @@ Motor de 12 V con Engranaje de Reducción: Uso, Impulsa el mecanismo de movimien
 
 <h3><b>Lista de materiales:</b></h3>
   
-  ![](../images/proyecto_f/materiales2.jpg)
 
+  ![](../images/proyecto_f/materiales2.jpg)
 
 
   <h3><b>Código Arduino para los Prototipos:</b></h3>
