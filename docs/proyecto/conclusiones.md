@@ -25,20 +25,20 @@ Algunas posibles utilidades:
 
 Arquitectura adaptativa para espacios públicos.
 
+![](../images/proyecto_f/futuroa1.jpg)
 
-Estructuras inflables que se despliegan para proteger áreas peatonales durante lluvias intensas, controladas mediante sensores que detectan cambios climáticos.
-
-
-Control climático en edificios comerciales o residenciales.
-
-
-Fachadas dinámicas que ajustan su posición según la intensidad de la luz solar, reduciendo la necesidad de sistemas de climatización artificial.
+Estructuras inflables que se despliegan para proteger áreas peatonales durante lluvias intensas, controladas mediante sensores que detectan cambios climáticos. Control climático en edificios comerciales o residenciales.
 
 
 Coberturas Adaptativas para Instrumentos Científicos: Sistemas inflables diseñados para proteger telescopios u otros instrumentos expuestos a la intemperie, asegurando su funcionalidad frente a cambios climáticos, polvo o humedad.
 
+![](../images/proyecto_f/futuroa3.jpg)
 
-Aplicaciones en Vehículos: Coberturas inflables para proteger de condiciones climáticas adversas o sistemas dinámicos que mejoran la aerodinámica y la eficiencia energética mediante cambios en su envoltura externa.]
+Fachadas dinámicas que ajustan su posición según la intensidad de la luz solar, reduciendo la necesidad de sistemas de climatización artificial.
+
+Aplicaciones en Vehículos: Coberturas inflables para proteger de condiciones climáticas adversas o sistemas dinámicos que mejoran la aerodinámica y la eficiencia energética mediante cambios en su envoltura externa.
+
+![](../images/proyecto_f/futuroa2.jpg)
 
 
 Estos ejemplos demuestran cómo las estructuras dinámicas pueden integrarse en escenarios cotidianos para ofrecer soluciones prácticas, adaptativas y sostenibles.
@@ -79,19 +79,23 @@ Adaptar las estructuras para aplicaciones a mayor escala en entornos arquitectó
 <h3><b>Proyectos Futuros</b></h3
 
 
-	Integración de Tecnologías:
+![](../images/proyecto_f/protob1.jpg)
 
 
-	Combinar las técnicas de inflables y origami en un prototipo con aplicaciones de programación más avanzadas.
+
+Integración de Tecnologías:
 
 
-	Colaboraciones:
+Combinar las técnicas de inflables y origami en un prototipo con aplicaciones de programación más avanzadas.
 
 
-	Trabajar con arquitectos y diseñadores para aplicar las estructuras en proyectos reales.
+Colaboraciones:
 
 
-	Difusión y Código Abierto:
+Trabajar con arquitectos y diseñadores para aplicar las estructuras en proyectos reales.
+
+
+Difusión y Código Abierto:
 
 
 Complementar la documentación y compartir los diseños y procesos para fomentar la innovación abierta.
@@ -100,10 +104,10 @@ Complementar la documentación y compartir los diseños y procesos para fomentar
 Impacto del Diseño, Sostenibilidad:
 
 
-	Uso de Materiales Reciclados:
+Uso de Materiales Reciclados:
 
 
-	Empleo de PVC flexible, acrílico y aluminio compuesto reciclados, reduciendo el impacto ambiental.
+Empleo de PVC flexible, acrílico y aluminio compuesto reciclados, reduciendo el impacto ambiental.
 
 
 Funcionalidad: Aplicación de técnicas no tradicionales en arquitectura y diseño, ofreciendo soluciones adaptativas y dinámicas.
