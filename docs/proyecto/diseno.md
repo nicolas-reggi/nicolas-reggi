@@ -104,6 +104,19 @@ La estructura está compuesta por polígonos de acrílico diseñadas según prin
 El movimiento lineal es controlado mediante un motor DC con reducción de engranajes, conectado a un tornillo vertical, lo que permite un desplazamiento preciso y suave. 
 
 
+En la siguiente imagen se presenta el prototipo con sus componentes visibles, identificados mediante puntos de colores para mayor claridad:
+
+Punto amarillo: husillo encargado de mover verticalmente la estructura.
+Punto azul: motor DC equipado con su engranaje reductor.
+Punto verde: placa controladora ESP32.
+Punto celeste: controlador o driver del motor.
+Punto rojo: fuente de alimentación de 12 volts.
+Punto naranja: interruptor de final de carrera.
+
+![](../images/proyecto_f/componentes.jpg)
+
+
+
 Este sistema es gestionado por una placa ESP32 programada en lenguaje Arduino, que coordina los movimientos mecánicos en diferentes grados.
 
 
