@@ -77,8 +77,9 @@ Conectar sensores que interactúen con el medio o las personas.
 Adaptar las estructuras para aplicaciones a mayor escala en entornos arquitectónicos o instalaciones artísticas.
 
 
-<h3><b></b></h3
 <h3><b>Proyectos Futuros</b></h3>
+
+
 Integración de Tecnologías:
 
 
