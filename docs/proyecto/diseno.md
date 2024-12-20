@@ -332,6 +332,25 @@ void loop() {
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación de Fabricación Digital</title>
+</head>
+<body>
+    <p style="text-align: center; margin-top: 50px;">
+        <a href="https://drive.google.com/drive/folders/1hs5l_QB4YmafuKwYWVVBMMVvOlbVCqNz?usp=sharing" target="_blank">
+            Haga clic aquí para acceder a la Documentación de Fabricación Digital
+        </a>
+    </p>
+</body>
+</html>
+
+
+
+
 
   <h3><b>Preguntas que se respondieron:</b></h3>
   
