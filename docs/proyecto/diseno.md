@@ -29,8 +29,14 @@ El diseño está compuesto por dos octógonos de PVC flexible soldados en su per
 
  Al inflarse, la interacción entre estos elementos genera una estructura tridimensional dinámica, limitando el movimiento de las superficies a patrones geométricos predefinidos.
 
+
 ![](../images/proyecto_f/protoa2.jpg)
 
+
+La siguiente imagen muestra el acople de aire utilizado para conectar la manguera al inflable. Fabricado mediante impresión 3D con PLA, este componente ha sido diseñado para adaptarse de manera sencilla y funcional al sistema.
+
+
+![](../images/proyecto_f/acople.jpg)
 
 Para controlar el inflado y los cambios de forma, se utilizó un sistema basado en una placa ESP32 programada con Arduino, que opera en conjunto con un mini compresor de aire y una válvula solenoide para liberar el aire. 
 ![](../images/proyecto_f/protoa5.jpg)
